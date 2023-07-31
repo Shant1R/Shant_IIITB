@@ -135,7 +135,8 @@ docker run hello-world
 ```
 
 Screenshot after installation-
-![magic](https://github.com/Shant1R/Shant_IIITB/assets/59409568/f5fe09ee-2f15-47c0-b4a6-5a41febf7e76)
+![openlane](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d55be32a-a662-4284-94b0-b0d53af2fbca)
+
     
 </details>
 
