@@ -2,7 +2,7 @@
 
 ASIC Theory
 
-Steps for installation of the necessary tools
+# Steps for software installation of the necessary tools
 
 <details>
 <summary>Yosys</summary>
