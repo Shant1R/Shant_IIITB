@@ -1,5 +1,7 @@
 #ASIC Theory
 
+The Github repository documents and tracks the progress for the course Physical Design ASIC(VL508).  
+
 [Day 0](#day-0)
 
 ## DAY 0
