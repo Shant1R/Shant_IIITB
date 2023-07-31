@@ -28,7 +28,7 @@ $ make config-gcc
 $ make 
 $ sudo make install
 ```
-
+Screenshot after installation-
 ![Yosys](./Images/yosys.png)
 
 </details>
@@ -39,10 +39,11 @@ $ sudo make install
 Icarus Verilog also known as iverilog is installed using the following command.
 
 ```bash
+$ sudo apt-get update
 $ sudo apt-get install iverilog
 
 ```
-
+Screenshot after installation-
 ![Iverilog](./Images/iverilog.png)
 
 </details>
@@ -56,7 +57,7 @@ GTKWave is installed using the following commands.
 $ sudo apt update
 $ sudo apt install gtkwave
 ```
-
+Screenshot after installation-
 ![GTKWave](./Images/gtkwave.png)
 
 </details>
@@ -76,7 +77,7 @@ $ ../configure  --with-x --with-readline=yes --disable-debug
 $ make
 $ sudo make install
 ```
-
+Screenshot after installation-
 ![ngspice](./Images/ngspice.png)
     
 </details>
@@ -101,7 +102,7 @@ $   make
 $   sudo make install
 
 ```
-
+Screenshot after installation-
 ![magic(./Images/magic.png)
     
 </details>
