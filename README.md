@@ -106,6 +106,6 @@ $   sudo make install
 
 ```
 Screenshot after installation-
-![magic(./Images/magic.png)
+![magic](https://github.com/Shant1R/Shant_IIITB/assets/59409568/f5fe09ee-2f15-47c0-b4a6-5a41febf7e76)
     
 </details>
