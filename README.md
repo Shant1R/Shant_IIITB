@@ -2,10 +2,12 @@
 
 ASIC Theory
 
-Steps for installation
+Steps for installation of the necessary tools
 
 <details>
 <summary>Yosys</summary>
+
+Yosys is installed using the following set of steps.
 
 ```bash
 $ git clone https://github.com/YosysHQ/yosys.git
@@ -25,7 +27,9 @@ $ sudo make install
 </details>
 
 <details>
-<summary>Iverilog</summary>
+<summary>Icarus verilog</summary>
+
+Icarus Verilog also known as iverilog is installed using the following command.
 
 ```bash
 $ sudo apt-get install iverilog
@@ -38,6 +42,8 @@ $ sudo apt-get install iverilog
 
 <details>
 <summary>GTKWave</summary>
+
+GTKWave is installed using the following commands.
 
 ```bash
 $ sudo apt update
