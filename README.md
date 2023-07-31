@@ -6,7 +6,8 @@ Steps for installation
 
 <details>
     <summary>Yosys</summary>
-
+    ![Yosys](Images/yosys.png)
+    
     <blockquote>
         $ git clone https://github.com/YosysHQ/yosys.git
         $ cd yosys-master
@@ -21,7 +22,7 @@ Steps for installation
 
     </blockquote>
 
-    ![Yosys](Images/yosys.png)
+    
 
 </details>
 
