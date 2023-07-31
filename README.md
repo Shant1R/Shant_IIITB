@@ -8,7 +8,7 @@ Steps for installation
     <summary>Yosys</summary>
     ![Yosys](Images/yosys.png)
     
-    <blockquote>
+    '''bash
         $ git clone https://github.com/YosysHQ/yosys.git
         $ cd yosys-master
         $ sudo apt install make  # If make is not installed, please install it
@@ -20,7 +20,7 @@ Steps for installation
         $ make
         $ sudo make install
 
-    </blockquote>
+    '''
 
     
 
