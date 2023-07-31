@@ -31,7 +31,6 @@ $ sudo make install
 Screenshot after installation-
 ![yosys](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6ac97051-4660-4722-b384-26eb6aba3260)
 
-)
 
 </details>
 
