@@ -32,6 +32,7 @@ $ sudo make install
 
 <bloclquote>
 # Your Iverilog installation commands go here
+    sudo apt-get install iverilog
 </blockquote>
 
 ![Iverilog](Images/iverilog.png)
@@ -40,7 +41,11 @@ $ sudo make install
 
 <details>
 <summary>GTKWave</summary>
-
+<blockquote>
+sudo apt update
+sudo apt install gtkwave
+</blockquote>
+    
 ![GTKWave](Images/gtkwave.png)
 
 </details>
