@@ -6,7 +6,7 @@ Steps for installation
 
 <details>
 <summary>Yosys</summary>
-![Yosys](./Images/yosys.png)    
+![Yosys] (./Images/yosys.png)    
 
 </details>
 
