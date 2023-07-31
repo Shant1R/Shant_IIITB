@@ -6,6 +6,9 @@ Steps for installation
 
 <details>
 <summary>Yosys</summary>
+
+<blockquote>
+
 ```bash
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys-master
