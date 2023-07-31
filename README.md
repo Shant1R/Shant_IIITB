@@ -1,8 +1,11 @@
-# DAY 0
+#ASIC Theory
+[Day 0](#day-0)
+
+## DAY 0
 
 
 <details>
-    <summary>ASIC Theory</summary>
+    <summary>Installation</summary>
     Steps for installation of the various necessary tools are given below.
 </details>
 
