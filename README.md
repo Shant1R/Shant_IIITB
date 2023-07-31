@@ -5,12 +5,8 @@ ASIC Theory
 Steps for installation
 
 <details>
-    <summary>Yosys</summary>
-    ![Yosys](Images/yosys.png)
-    
-   
-
-    
+<summary>Yosys</summary>
+![Yosys](Images/yosys.png)    
 
 </details>
 
