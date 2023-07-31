@@ -94,7 +94,7 @@ $ cmake ..
 $ make
 ```
 Screenshot after installation-
-![gtkwave](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ae8c7922-c337-4157-839f-c8f1f62265b2)
+![opensta](https://github.com/Shant1R/Shant_IIITB/assets/59409568/36537253-8d3e-4f7a-9358-35c3f5c04e55)
 
 </details>
 
