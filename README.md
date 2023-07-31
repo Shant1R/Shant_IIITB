@@ -45,7 +45,8 @@ $ sudo apt-get install iverilog
 
 ```
 Screenshot after installation-
-![Iverilog](./Images/iverilog.png)
+![iverilog](https://github.com/Shant1R/Shant_IIITB/assets/59409568/4f77ee22-b0b3-4c96-9f8e-1b74443579e4)
+
 
 </details>
 
