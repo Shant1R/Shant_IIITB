@@ -7,6 +7,7 @@ Steps for installation
 <details>
 <summary>Yosys</summary>
 ![Yosys](Images/yosys.png)
+</details>
 '''
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys-master 
@@ -19,7 +20,7 @@ $ make config-gcc
 $ make 
 $ sudo make install
 '''
-</details>
+
 
 <details>
 <summary>Iverilog</summary>
