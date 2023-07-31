@@ -2,7 +2,7 @@
 
 ASIC Theory
 
-Here are some images related to the project. Click on the dropdowns to view the images and their descriptions.
+Steps for installation
 
 <details>
 <summary>Yosys</summary>
