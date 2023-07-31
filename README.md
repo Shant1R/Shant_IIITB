@@ -20,7 +20,6 @@ $ sudo apt-get install build-essential clang bison flex \
 $ make config-gcc
 $ make
 $ sudo make install
-'''
 </blockquote>
 ![Yosys](Images/yosys.png)
 
