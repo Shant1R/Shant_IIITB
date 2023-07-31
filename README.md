@@ -7,7 +7,7 @@ Here are some images related to the project. Click on the dropdowns to view the 
 <details>
 <summary>Image 1 - Description</summary>
 
-![Yosys](Screenshot from 2023-07-31 09-43-28.png)
+![Yosys](Images/yosys.png)
 
 Description of image 1 goes here.
 </details>
