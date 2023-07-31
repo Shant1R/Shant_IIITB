@@ -58,7 +58,7 @@ $ sudo apt update
 $ sudo apt install gtkwave
 ```
 Screenshot after installation-
-![GTKWave](![gtkwave](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ae8c7922-c337-4157-839f-c8f1f62265b2))
+![gtkwave](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ae8c7922-c337-4157-839f-c8f1f62265b2)
 
 </details>
 
