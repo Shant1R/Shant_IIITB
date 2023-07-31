@@ -8,6 +8,7 @@ Steps for installation
 <summary>Yosys</summary>
 
 <blockquote>
+'''
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys-master
 $ sudo apt install make  # If make is not installed, please install it
@@ -18,6 +19,8 @@ $ sudo apt-get install build-essential clang bison flex \
 $ make config-gcc
 $ make
 $ sudo make install
+'''
+
 </blockquote>
 
 ![Yosys](Images/yosys.png)
