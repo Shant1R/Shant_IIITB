@@ -64,6 +64,41 @@ Screenshot after installation-
 
 </details>
 
+
+<details>
+<summary>OpenSTA</summary></summary>
+
+To install OpenSTA, follow the given github link and download the following prerequisites- 
+
+```bash
+https://github.com/The-OpenROAD-Project/OpenSTA
+```
+
+```bash
+$ sudo apt-get install cmake
+$ sudo apt-get install clang
+$ sudo apt-get install gcc
+$ sudo apt-get install tcl
+$ sudo apt-get install swig
+$ sudo apt-get install bison
+$ sudo apt-get install flex
+```
+
+Installation commands
+```bash
+$ git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
+$ cd OpenSTA
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+Screenshot after installation-
+![gtkwave](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ae8c7922-c337-4157-839f-c8f1f62265b2)
+
+</details>
+
+
 <details>
 <summary>NGSpice</summary>
 NGSpice is installed using the following commands.
