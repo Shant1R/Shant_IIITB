@@ -5,7 +5,7 @@ ASIC Theory
 Here are some images related to the project. Click on the dropdowns to view the images and their descriptions.
 
 <details>
-<summary>Image 1 - Description</summary>
+<summary>Yosys - Description</summary>
 
 ![Yosys](Images/yosys.png)
 
@@ -13,17 +13,17 @@ Description of image 1 goes here.
 </details>
 
 <details>
-<summary>Image 2 - Description</summary>
+<summary>Iverilog - Description</summary>
 
-![Iverilog](Screenshot from 2023-07-31 09-44-32.png)
+![Iverilog](Images/iverilog.png)
 
 Description of image 2 goes here.
 </details>
 
 <details>
-<summary>Image 3 - Description</summary>
+<summary>GTKWave - Description</summary>
 
-![GTKWave](Screenshot from 2023-07-31 09-44-44.png)
+![GTKWave](Images/gtkwave.png)
 
 Description of image 3 goes here.
 </details>
