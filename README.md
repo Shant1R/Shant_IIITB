@@ -8,8 +8,6 @@ Steps for installation
 <summary>Yosys</summary>
 
 <blockquote>
-
-```bash
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys-master
 $ sudo apt install make  # If make is not installed, please install it
@@ -28,6 +26,10 @@ $ sudo make install
 
 <details>
 <summary>Iverilog</summary>
+
+<bloclquote>
+# Your Iverilog installation commands go here
+</blockquote>
 
 ![Iverilog](Images/iverilog.png)
 
