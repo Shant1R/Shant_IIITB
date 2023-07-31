@@ -84,7 +84,7 @@ $ sudo apt-get install bison
 $ sudo apt-get install flex
 ```
 
-Installation commands
+Installation commands for openSTA
 ```bash
 $ git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
 $ cd OpenSTA
