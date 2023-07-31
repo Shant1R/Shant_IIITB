@@ -1,6 +1,6 @@
 # DAY 0
 
-ASIC Theory
+<summary>ASIC Theory</summary>
 <details>Steps for installation of the various necessary tools are given below.
 </details>
 
