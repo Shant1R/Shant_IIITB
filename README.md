@@ -1,8 +1,8 @@
 #ASIC Theory
+
 [Day 0](#day-0)
 
 ## DAY 0
-
 
 <details>
     <summary>Installation</summary>
