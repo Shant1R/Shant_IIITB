@@ -80,7 +80,8 @@ $ make
 $ sudo make install
 ```
 Screenshot after installation-
-![ngspice](./Images/ngspice.png)
+![ngspice](https://github.com/Shant1R/Shant_IIITB/assets/59409568/726fcc95-63eb-4089-87e3-f306cc37d83c)
+
     
 </details>
 
