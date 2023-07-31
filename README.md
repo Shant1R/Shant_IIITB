@@ -7,8 +7,6 @@ Steps for installation
 <details>
 <summary>Yosys</summary>
 
-![Yosys](./Images/yosys.png)
-
 ```bash
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys-master 
@@ -22,10 +20,17 @@ $ make
 $ sudo make install
 ```
 
+![Yosys](./Images/yosys.png)
+
 </details>
 
 <details>
 <summary>Iverilog</summary>
+
+```bash
+$ sudo apt-get install iverilog
+
+```
 
 ![Iverilog](./Images/iverilog.png)
 
@@ -33,6 +38,11 @@ $ sudo make install
 
 <details>
 <summary>GTKWave</summary>
+
+```bash
+$ sudo apt update
+$ sudo apt install gtkwave
+```
 
 ![GTKWave](./Images/gtkwave.png)
 
