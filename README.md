@@ -29,7 +29,9 @@ $ make
 $ sudo make install
 ```
 Screenshot after installation-
-![Yosys](./Images/yosys.png)
+![gtkwave](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ae8c7922-c337-4157-839f-c8f1f62265b2)
+![Uploading yosys.png…]()
+)
 
 </details>
 
