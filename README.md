@@ -1,8 +1,8 @@
 # DAY 0
 
 ASIC Theory
-
-# Steps for installation of the necessary tools
+<details>Steps for installation of the various necessary tools are given below.
+</details>
 
 <details>
 <summary>Yosys</summary>
