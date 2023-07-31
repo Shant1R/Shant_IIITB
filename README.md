@@ -29,7 +29,7 @@ $ make
 $ sudo make install
 ```
 Screenshot after installation-
-![Yosys](./Images/yosys.png)
+![Yosys]([./Images/yosys.png](https://github.com/Shant1R/Shant_IIITB/issues/2#issue-1828491187))
 
 </details>
 
