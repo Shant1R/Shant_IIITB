@@ -38,11 +38,22 @@ $ sudo make install
 Screenshot after installation-
 ![yosys](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6ac97051-4660-4722-b384-26eb6aba3260)
 
-
 </details>
 
-<details>
 <summary>Icarus verilog</summary>
+
+Iverilog is a widely-used open-source Verilog simulation and synthesis tool that allows designers to simulate and synthesize digital hardware designs described in Verilog HDL. It offers a comprehensive set of features for both simulation and synthesis, making it a valuable tool for digital design projects of all scales. With its versatility and community-driven development, Iverilog provides an efficient and cost-effective solution for verifying and implementing digital designs.
+
+**Key Features**:
+- Verilog Simulation: Iverilog supports simulation of Verilog designs, enabling users to test and verify their digital circuits' functionality.
+- Synthesis Support: The tool provides synthesis capabilities, allowing designers to generate gate-level netlists suitable for ASIC or FPGA implementation.
+- IEEE Standard Compliance: Iverilog adheres to the IEEE 1364-2005 Verilog standard, ensuring compatibility with a wide range of Verilog designs.
+- VPI (Verilog Programming Interface) Support: Iverilog supports VPI, enabling users to write C/C++ programs to interact with the simulation or synthesis process.
+- Efficient and Scalable: Iverilog is known for its efficiency, making it suitable for small hobbyist projects as well as large-scale commercial designs.
+- Open-Source and Community-Driven: Being an open-source tool, Iverilog benefits from an active community of users and developers, continually improving and enhancing its capabilities.
+
+<details>
+<summary>Installation</summary>
 
 Icarus Verilog also known as iverilog is installed using the following command.
 
@@ -183,4 +194,4 @@ Screenshot after installation-
 
 # References
 1. https://github.com/YosysHQ/yosys
-2. 
+2. https://github.com/steveicarus/iverilog
