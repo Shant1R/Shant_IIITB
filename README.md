@@ -1,4 +1,5 @@
 # ASIC Theory
+ASIC stands for Application-Specific Integrated Circuit. It is a type of integrated circuit (IC) that is specially designed for a particular application or use case rather than being a general-purpose chip. ASICs are optimized for specific tasks, and their design is tailored to perform those tasks efficiently and with high performance.
 
 The Github repository documents and tracks the progress for the course Physical Design ASIC(VL508).  
 
