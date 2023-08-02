@@ -18,7 +18,8 @@ Yosys is a powerful and widely-used open-source RTL synthesis tool that enables 
 - Formal Verification: The tool includes formal verification capabilities to ensure the correctness of the design.
 - Scripting Interface: Yosys provides a scripting interface, enabling users to write custom synthesis scripts for specific design flows and optimizations.
 - Open-Source and Community-Driven: Yosys is an open-source project with an active community, constantly contributing to its development and improvement.
-<summary>Installation</summary>
+  
+**Installation**
 
 Yosys is installed using the following set of steps.
 
