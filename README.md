@@ -4,6 +4,7 @@ ASIC stands for Application-Specific Integrated Circuit. It is a type of integra
 The Github repository documents and tracks the progress for the course Physical Design ASIC(VL508).  
 
 [Day 0](#day-0)
+
 [Day 1](#day-1)
 
 ## DAY 0
