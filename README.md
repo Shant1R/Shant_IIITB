@@ -180,6 +180,20 @@ Screenshot after installation-
 
 <details>
 <summary><strong>Magic</strong></summary>
+Magic is a widely-used open-source VLSI (Very-Large-Scale Integration) layout and chip design tool. It offers a versatile and user-friendly environment for designing, editing, and analyzing integrated circuit layouts. As an essential tool in the physical design flow, Magic allows engineers and researchers to create complex IC layouts and verify their correctness before fabrication. With a range of features and active community support, Magic is a valuable asset for digital and analog chip designers and hobbyists.
+
+**Key Features**:
+- Layout Editing: Magic provides an intuitive interface for designing and editing integrated circuit layouts, enabling efficient placement and routing of various circuit elements.
+- Custom Design Rules: Users can define custom design rules, allowing them to tailor the layout to specific technology nodes and manufacturing processes.
+- Hierarchical Design: Magic supports hierarchical design methodologies, enabling the creation of complex designs by organizing circuits into hierarchical blocks.
+- Design Rule Checking (DRC): The tool performs design rule checks to identify potential layout errors and violations before the chip fabrication process.
+- Extraction and Simulation: Magic allows extraction of parasitic components and supports SPICE netlist simulation for accurate performance evaluation.
+- Scripting and Automation: Users can extend Magic's functionality using scripts, automating repetitive tasks and customizing the design flow.
+- Cross-Platform Support: Magic is compatible with various operating systems, including Windows, macOS, and Linux, making it accessible to a wide range of users.
+- Open-Source and Community-Driven: As an open-source project, Magic benefits from an active community of users and developers, ensuring continuous improvement and adaptability to new design challenges.
+
+**Installation**
+  
 Magic is installed using the following commands.
 
 ```bash
@@ -205,6 +219,21 @@ Screenshot after installation-
 
 <details>
 <summary><strong>OpenLANE</strong></summary>
+
+OpenLane is a comprehensive open-source digital ASIC (Application-Specific Integrated Circuit) design flow that facilitates the design and implementation of complex digital chips. It provides a complete RTL-to-GDSII (RTL to Graphic Design System II) flow, encompassing synthesis, placement, routing, and manufacturing processes. OpenLane streamlines the ASIC design process and enables designers to create custom digital chips with greater efficiency and accessibility. With an extensive set of features and community support, OpenLane is a valuable tool for ASIC designers, researchers, and hobbyists alike.
+
+**Key Features**:
+- RTL-to-GDSII Flow: OpenLane offers an end-to-end design flow, starting from RTL synthesis to final GDSII layout generation, ensuring a seamless ASIC design process.
+- Synthesis and Optimization: The tool performs RTL synthesis and optimization to generate an efficient gate-level representation of the design.
+- Placement and Routing: OpenLane optimizes chip placement and performs routing to connect all the components efficiently.
+- DRC and LVS Checks: OpenLane includes design rule checking (DRC) and layout versus schematic (LVS) checks to ensure the design's manufacturability and correctness.
+- PDK Integration: The tool integrates with Process Design Kits (PDKs) from various foundries, supporting a wide range of technology nodes and manufacturing processes.
+- Scripting and Customization: Users can write scripts to customize various aspects of the design flow and automate repetitive tasks.
+- Performance and Area Optimization: OpenLane offers options to optimize the design for performance, area, or power based on the project's requirements.
+- Cross-Platform Support: OpenLane is compatible with multiple operating systems, including Windows, macOS, and Linux, making it accessible to diverse design teams.
+- Open-Source and Community-Driven: Being an open-source project, OpenLane benefits from continuous community contributions, bug fixes, and enhancements, ensuring its continuous development and improvement.
+
+**Installation**
 OpenLane is installed using the following commands.
 
 ```bash
@@ -226,6 +255,15 @@ After Reboot
 ```bash
 docker run hello-world
 ```
+
+```bash
+cd $HOME
+git clone https://github.com/The-OpenROAD-Project/OpenLane
+cd OpenLane
+make
+make test
+```
+
 Screenshot after installation-
 ![openlane](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d55be32a-a662-4284-94b0-b0d53af2fbca)
 
@@ -238,3 +276,5 @@ Screenshot after installation-
 3. https://github.com/gtkwave/gtkwave
 4. https://github.com/The-OpenROAD-Project/OpenSTA
 5. https://github.com/ngspice/ngspice
+6. https://github.com/RTimothyEdwards/magic
+7. https://github.com/The-OpenROAD-Project/OpenLane
