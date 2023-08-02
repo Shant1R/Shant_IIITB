@@ -100,6 +100,19 @@ Screenshot after installation-
 <details>
 <summary><strong>OpenSTA</strong></summary>
 
+OpenSTA is a powerful open-source Static Timing Analysis (STA) tool designed to analyze digital integrated circuits and provide critical timing information. As an essential component of the digital design flow, OpenSTA enables engineers to perform timing verification, identify potential timing violations, and optimize the performance of complex designs. With its versatile features and community-driven development, OpenSTA is a valuable resource for designers working on ASIC or FPGA projects.
+
+**Key Features**:
+- Static Timing Analysis: OpenSTA performs static timing analysis to determine the critical paths and timing violations in digital designs.
+- Liberty File Support: The tool supports industry-standard Liberty format files, which contain timing information about the standard cells used in the design.
+- Path Tracing and Reporting: OpenSTA traces critical timing paths and generates detailed timing reports, highlighting setup and hold violations.
+- Constraints Support: Designers can specify timing constraints in the design using standard Synopsys Design Constraints (SDC) files, which OpenSTA interprets during the analysis.
+- Highly Scalable: OpenSTA can handle designs of varying sizes, from small digital circuits to large-scale industrial projects, making it suitable for a broad range of applications.
+- Interactive Visualization: OpenSTA provides an interactive graphical interface to visualize and navigate through the timing paths in the design.
+- Open-Source and Community-Driven: As an open-source project, OpenSTA benefits from contributions and feedback from a community of users and developers, ensuring continuous improvement and adaptability to new technologies.
+
+**Installation**
+
 To install OpenSTA, follow the given github link and download the following prerequisites- 
 
 ```bash
@@ -223,4 +236,5 @@ Screenshot after installation-
 1. https://github.com/YosysHQ/yosys
 2. https://github.com/steveicarus/iverilog
 3. https://github.com/gtkwave/gtkwave
-4. https://github.com/ngspice/ngspice
+4. https://github.com/The-OpenROAD-Project/OpenSTA
+5. https://github.com/ngspice/ngspice
