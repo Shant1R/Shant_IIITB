@@ -70,7 +70,7 @@ Screenshot after installation-
 </details>
 
 <details>
-<summary>GTKWave</summary>
+<summary><strong>GTKWave</strong></summary>
 
 GTKWave is installed using the following commands.
 
@@ -85,7 +85,7 @@ Screenshot after installation-
 
 
 <details>
-<summary>OpenSTA</summary></summary>
+<summary><strong>OpenSTA</strong></summary>
 
 To install OpenSTA, follow the given github link and download the following prerequisites- 
 
