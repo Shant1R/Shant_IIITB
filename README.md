@@ -6,6 +6,7 @@ The Github repository documents and tracks the progress for the course Physical 
 
 ## DAY 0
 
+<details>
 <summary> <strong> Yosys </strong> </summary>
 
 Yosys is a powerful and widely-used open-source RTL synthesis tool that enables designers to convert Verilog RTL code into optimized gate-level representations suitable for ASIC or FPGA implementation. It is designed for digital hardware design and offers a plethora of features, including RTL synthesis, technology mapping, optimization, and formal verification capabilities. With a scripting interface and an active community of users and developers, Yosys provides flexibility, efficiency, and cost-effectiveness for various digital design projects.
@@ -17,8 +18,6 @@ Yosys is a powerful and widely-used open-source RTL synthesis tool that enables 
 - Formal Verification: The tool includes formal verification capabilities to ensure the correctness of the design.
 - Scripting Interface: Yosys provides a scripting interface, enabling users to write custom synthesis scripts for specific design flows and optimizations.
 - Open-Source and Community-Driven: Yosys is an open-source project with an active community, constantly contributing to its development and improvement.
-
-<details>
 <summary>Installation</summary>
 
 Yosys is installed using the following set of steps.
