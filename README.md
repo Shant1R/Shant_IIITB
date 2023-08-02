@@ -11,18 +11,12 @@ The Github repository documents and tracks the progress for the course Physical 
 Yosys is a powerful and widely-used open-source RTL synthesis tool that enables designers to convert Verilog RTL code into optimized gate-level representations suitable for ASIC or FPGA implementation. It is designed for digital hardware design and offers a plethora of features, including RTL synthesis, technology mapping, optimization, and formal verification capabilities. With a scripting interface and an active community of users and developers, Yosys provides flexibility, efficiency, and cost-effectiveness for various digital design projects.
 
 Key Features:
-
-RTL Synthesis: Yosys takes Verilog RTL code as input and performs RTL synthesis, generating a gate-level netlist.
-
-Technology Mapping: The tool maps the RTL design to a specific library of standard cells, allowing optimization for target technologies.
-
-Optimization: Yosys employs various algorithms to optimize the design for improved performance, area, and power consumption.
-
-Formal Verification: The tool includes formal verification capabilities to ensure the correctness of the design.
-
-Scripting Interface: Yosys provides a scripting interface, enabling users to write custom synthesis scripts for specific design flows and optimizations.
-
-Open-Source and Community-Driven: Yosys is an open-source project with an active community, constantly contributing to its development and improvement.
+- RTL Synthesis: Yosys takes Verilog RTL code as input and performs RTL synthesis, generating a gate-level netlist.
+- Technology Mapping: The tool maps the RTL design to a specific library of standard cells, allowing optimization for target technologies.
+- Optimization: Yosys employs various algorithms to optimize the design for improved performance, area, and power consumption.
+- Formal Verification: The tool includes formal verification capabilities to ensure the correctness of the design.
+- Scripting Interface: Yosys provides a scripting interface, enabling users to write custom synthesis scripts for specific design flows and optimizations.
+- Open-Source and Community-Driven: Yosys is an open-source project with an active community, constantly contributing to its development and improvement.
 
 <details>
 <summary>Installation</summary>
