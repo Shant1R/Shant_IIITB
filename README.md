@@ -175,10 +175,12 @@ After Reboot
 ```bash
 docker run hello-world
 ```
-
 Screenshot after installation-
 ![openlane](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d55be32a-a662-4284-94b0-b0d53af2fbca)
 
-    
 </details>
 
+
+# References
+1. https://github.com/YosysHQ/yosys
+2. 
