@@ -159,6 +159,7 @@ Ngspice is a powerful open-source circuit simulation tool that allows engineers,
 - Open-Source and Community-Driven: Being an open-source project, Ngspice benefits from active community contributions, bug fixes, and enhancements, ensuring its continuous development and reliability.
 
 **Installation**
+
 NGSpice is installed using the following commands.
 
 After downloading the tarball from https://sourceforge.net/projects/ngspice/files/ to a local directory, unpack it using:
@@ -234,6 +235,7 @@ OpenLane is a comprehensive open-source digital ASIC (Application-Specific Integ
 - Open-Source and Community-Driven: Being an open-source project, OpenLane benefits from continuous community contributions, bug fixes, and enhancements, ensuring its continuous development and improvement.
 
 **Installation**
+
 OpenLane is installed using the following commands.
 
 ```bash
