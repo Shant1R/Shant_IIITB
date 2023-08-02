@@ -140,7 +140,7 @@ Screenshot after installation-
 </details>
 
 <details>
-<summary>Magic</summary>
+<summary><strong>Magic</strong></summary>
 Magic is installed using the following commands.
 
 ```bash
