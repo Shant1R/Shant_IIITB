@@ -119,7 +119,7 @@ Screenshot after installation-
 
 
 <details>
-<summary>NGSpice</summary>
+<summary><strong>NGSpice</strong></summary>
 NGSpice is installed using the following commands.
 
 After downloading the tarball from https://sourceforge.net/projects/ngspice/files/ to a local directory, unpack it using:
@@ -165,7 +165,7 @@ Screenshot after installation-
 </details>
 
 <details>
-<summary>OpenLANE</summary>
+<summary><strong>OpenLANE</strong></summary>
 OpenLane is installed using the following commands.
 
 ```bash
