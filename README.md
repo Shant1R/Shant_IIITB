@@ -42,7 +42,7 @@ Screenshot after installation-
 
 <details>
 
-<summary>Icarus verilog</summary>
+<summary><strong>Icarus verilog</strong></summary>
 
 Iverilog is a widely-used open-source Verilog simulation and synthesis tool that allows designers to simulate and synthesize digital hardware designs described in Verilog HDL. It offers a comprehensive set of features for both simulation and synthesis, making it a valuable tool for digital design projects of all scales. With its versatility and community-driven development, Iverilog provides an efficient and cost-effective solution for verifying and implementing digital designs.
 
