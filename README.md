@@ -291,7 +291,7 @@ Under the given repository, **Iverilog is used which is an open source simulator
 - The output of the simulator is a VCD file, ie. value change dump file which is viewed using **GTKWave** to visualise the waveform.
 
 Simulation flow of Iverilog - 
-![workflow](https://github.com/Shant1R/Shant_IIITB/assets/59409568/076ef120-1a12-42dd-bd50-b65b9eaec88d)
+![workflow](https://github.com/Shant1R/Shant_IIITB/assets/59409568/076ef120-1a12-42dd-bd50-b65b9eaec88d)width="200" height="150"
 
 
 
