@@ -352,7 +352,7 @@ $ gvim tb_good_mux.v -o good_mux.v
 Editor window - 
 ![code_good_mux](https://github.com/Shant1R/Shant_IIITB/assets/59409568/cf8ca326-755a-4664-ae0b-8c01b8e94723)
 
-There can be multiple ways to generate a mux. Under the given source code. it checks for the select line, if sel is 1, the output follows the input line 1 else it follows input line 0. Under the testbench, the inputs are set as reg and output as wire. The testbench has no primary inputs like the design source code. It instantiate the source code as uut - unit under test, any name can be used for instantiation. Under the testbench, the dumpfile is generated for visualisation. The input variables are set and the toggled periodically and sets an end time. 
+There can be multiple ways to generate a mux. Under the given source code. it checks for the select line, if sel is 1, the output follows the input line 1 else it follows input line 0. Under the testbench, the inputs are set as reg and output as wire. The testbench has no primary inputs like the design source code. It instantiate the source code as uut - unit under test, any name can be used. Under the testbench, the dumpfile is generated for visualisation. The input variables are set and the toggled periodically and sets an end time. 
 
 </details>
 
