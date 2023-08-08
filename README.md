@@ -341,6 +341,18 @@ Waveform on GTKWave -
 
 The waveform on gtkwave is used to check the variations in the output with the input.
 
+**Code Explaination**
+
+To edit the code, one can directly open the files or use gvim. The code to access both the source and testbech is given
+
+```bash
+$ gvim tb_good_mux.v -o good_mux.v
+```
+
+Editor window - 
+![code_good_mux](https://github.com/Shant1R/Shant_IIITB/assets/59409568/cf8ca326-755a-4664-ae0b-8c01b8e94723)
+
+
 </details>
 
 
