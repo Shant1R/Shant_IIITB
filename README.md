@@ -333,6 +333,12 @@ $ ./a.out
 $ gtkwave tb_good_mux.vcd
 ```
 
+Screenshot of the terminal - 
+![good_mux_terminal](https://github.com/Shant1R/Shant_IIITB/assets/59409568/06396f49-0e6c-487b-8408-82491557a852)
+
+Waveform on GTKWave - 
+![good_mux_gtk](https://github.com/Shant1R/Shant_IIITB/assets/59409568/cc8ec616-ac4d-4bc1-801f-0e680247ad69)
+
 
 </details>
 
