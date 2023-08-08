@@ -361,10 +361,9 @@ There can be multiple ways to generate a mux. Under the given source code. it ch
 <details>
 <summary><strong>Introduction to Yosys and Logic synthesis</strong></summary>
 
-**Introduction to Yosys**
+The RTL design is the behavioural model of the said specification written in an HDL language. For mapping this code to a hardware circuit comes the synthesis. The RTL code is translated to gate level using the front end libraries that are .lib files, through synthesis the netlist file is derived. 
 
-
-Synthesizer is a tool used to convert RTL to netlist. RTL is a level of abstraction used in digital design to describe how data is transferred and processed between registers in a circuit. It's a key step in converting high-level design concepts into hardware descriptions used for synthesis and implementation in ASIC and FPGA design. Whereas, A netlist is a textual representation of an electronic circuit that describes the connections between components such as gates, flip-flops, and other elements. It's used in various stages of electronic design, including simulation and synthesis, to represent the logical structure and interconnections of the circuit's components.
+The front end library is also called .lib, which can be explained as a collection for modules for the logic gates for the mapping. It contains various types of the same logic gate, such as 2 and 3 input and gates, and modules for the same gate with different execution speed, which can de decided upon the usecase and required specification.    
 
 The synthesizer used under this coursework is Yosys. 
 
@@ -378,7 +377,6 @@ Synthesis verification flow -
 
 To verify the synthesis output, we use the iverilog simulator which is given the netlist and testbench as inputs, attain a vcd file, which is visualised using gtkwave. The output on the gtkwave with the netlist file should be the same as in the case of RTL simulation. Since the primary inputs and outputs in case of RTL designs and netlist design remains the same, the same testbench can be used to verify the design. 
 
-**Introduction to Logic Synthesis**
 
 </details>
 
