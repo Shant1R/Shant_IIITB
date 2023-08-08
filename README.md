@@ -7,7 +7,7 @@ The Github repository documents and tracks the progress for the course Physical 
 
 [Day 1](#day-1)
 
-## DAY 0
+## DAY 0 - Installation
 
 <details>
 <summary> <strong> Yosys </strong> - Open-Source RTL Synthesis Tool </summary>
@@ -274,9 +274,9 @@ Screenshot after installation-
 
 </details>
 
-## DAY 1
+## DAY 1 - Introduction to Verilog RTL design and Synthesis
 
-#Introduction to Verilog RTL design and Synthesis 
+
 
 
 # References
