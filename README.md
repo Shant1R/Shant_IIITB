@@ -395,21 +395,25 @@ $ yosys
 ![yosys_lab_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/24e98dd7-b81c-4398-a0cb-f5d5bf872813)
 
 ```bash
->yosys read_liberty .lib Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/sky130_fd_sc_hd__tt_025C_1v80.lib
->yosys read_verilog good_mux.v
->yosys synth -top good_mux
->ypsys abc -liberty Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/sky130_fd_sc_hd__tt_025C_1v80.lib
->yosys show
+ read_liberty .lib Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/sky130_fd_sc_hd__tt_025C_1v80.lib
+ read_verilog good_mux.v
+ synth -top good_mux
+ abc -liberty Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/sky130_fd_sc_hd__tt_025C_1v80.lib
+ show
 ```
 
 ![yosys_lab_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/e3861c1c-4493-4fe1-822b-7e5179d95ab0)
 
 ```bash
+ read_verilog good_mux_netlist.v
+ !gvim good_mux_netlist.v  
 ```
 
 ![yosys_lab_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/c201daec-bc2b-44f7-83c5-77ab3dd37e9d)
 
 ```bash
+ read_verilog -noattr good_mux_netlist.v
+ !gvim good_mux_netlist.v
 ```
 
 ![yosys_lab_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/a917b533-9932-46bd-adfb-032cea61855b)
