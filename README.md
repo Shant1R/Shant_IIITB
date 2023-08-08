@@ -357,6 +357,7 @@ There can be multiple ways to generate a mux. Under the given source code. it ch
 
 </details>
 
+
 <details>
 <summary><strong>Introduction to Yosys</strong></summary>
   
