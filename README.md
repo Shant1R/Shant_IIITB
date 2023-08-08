@@ -363,11 +363,11 @@ There can be multiple ways to generate a mux. Under the given source code. it ch
 
 The RTL design is the behavioural model of the said specification written in an HDL language. For mapping this code to a hardware circuit comes the synthesis. The RTL code is translated to gate level using the front end libraries that are .lib files, through synthesis the netlist file is derived. 
 
-The front end library is also called .lib, which can be explained as a collection for modules for the logic gates for the mapping. It contains various types of the same logic gate, such as 2 and 3 input and gates, and modules for the same gate with different execution speed, which can de decided upon the usecase and required specification.    
+The front end library is also called .lib, which can be explained as a collection for modules for the logic gates for the mapping. It contains various types of the same logic gate, such as 2 and 3 input and gates, and modules for the same gate with different execution speed, which can de decided upon the usecase and required specification. One has to guide the synthesizer for the required execution time, ie, the use of faster and slower transistor models while mapping. This is known as constraints.    
 
 The synthesizer used under this coursework is Yosys. 
 
-Yosys setup -
+Yosys setup flow-
 ![yosys1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/35698376-e603-40eb-b5a4-a84965620587)
 
 The design block has the function read_design and .lib  has a read_liberty function which reads the design file and .lib respectively. The netlist block has the fucntion read_netlist which upon execution generates the netlist file for the given design. It is to note design file and netlist file are two different representations for the same given specification.  
