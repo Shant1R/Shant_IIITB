@@ -312,7 +312,7 @@ $ cd git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.
 Terminal Window - 
 ![sky130_gitclone](https://github.com/Shant1R/Shant_IIITB/assets/59409568/8e74128d-3341-4378-9c40-309260327bef)
 
-Upon the cloning, a new folder with the name *sky130RTLDesignAndSynthesisWorkshop* is made. Under this folder, there will be several folders, such as lib which contains the standard set library for sky130 which will be used for the synthesis, verilog_files which contains all the source files and testbenches for the experiments to be done. 
+Upon the cloning, a new folder with the name *sky130RTLDesignAndSynthesisWorkshop* is made. Under this folder, there will be several folders, such as lib which contains the standard set library for sky130 which will be used for the synthesis, verilog_files which contains all the source files and testbenches for the experiments to be done. The contents of each folder can be seen by going into the directory and entering ls.
 
 
   
