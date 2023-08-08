@@ -256,15 +256,15 @@ $ sudo reboot
 
 After Reboot
 ```bash
-docker run hello-world
+$ docker run hello-world
 ```
 
 ```bash
-cd $HOME
-git clone https://github.com/The-OpenROAD-Project/OpenLane
-cd OpenLane
-make
-make test
+$ cd $HOME
+$ git clone https://github.com/The-OpenROAD-Project/OpenLane
+$ cd OpenLane
+$ make
+$ make test
 ```
 
 Screenshot after installation-
@@ -297,6 +297,21 @@ Simulation flow of Iverilog -
 
 <details>
 <summary><strong>Introduction to Lab</strong></summary>
+
+The first step under the lab setup for the course is to form a seperate directory as VLSI and git clone the course files from the given repository in the code.
+
+
+
+```bash
+$ cd Documents
+$ cd ASICs
+$ cd VLSI
+$ cd git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+```
+
+Terminal Window - 
+![sky130_gitclone](https://github.com/Shant1R/Shant_IIITB/assets/59409568/8e74128d-3341-4378-9c40-309260327bef)
+
 
   
 </details>
