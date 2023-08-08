@@ -339,6 +339,7 @@ Screenshot of the terminal -
 Waveform on GTKWave - 
 ![good_mux_gtk](https://github.com/Shant1R/Shant_IIITB/assets/59409568/cc8ec616-ac4d-4bc1-801f-0e680247ad69)
 
+The waveform on gtkwave is used to check the variations in the output with the input.
 
 </details>
 
