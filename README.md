@@ -371,7 +371,6 @@ Yosys setup -
 
 The design block has the function read_design and .lib  has a read_liberty function which reads the design file and .lib respectively. The netlist block has the fucntion read_netlist which upon execution generates the netlist file for the given design. It is to note design file and netlist file are two different representations for the same given specification.  
 
-
 Synthesis verification flow - 
 ![yosys2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/8c89fc9e-7d6a-426e-b55f-3927db75d7e7)
 
