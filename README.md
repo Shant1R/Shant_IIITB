@@ -276,7 +276,8 @@ Screenshot after installation-
 
 ## DAY 1 - Introduction to Verilog RTL design and Synthesis
 
-**Open Source simulator iverilog**
+<details>
+<summary><strong>Open Source simulator iverilog</strong></summary>
 
 - Simulator is a tool to verify that the said design adheres to the functionality to its intended specifications. It works by following the input given and changes the output accordingly, thus one can compare the desired output and the output derived for the said inputs.
 
@@ -293,7 +294,7 @@ Under the given repository, **Iverilog is used which is an open source simulator
 Simulation flow of Iverilog - 
 ![workflow](https://github.com/Shant1R/Shant_IIITB/assets/59409568/b67eb2d2-478e-4745-9876-7846de6a01c0)
 
-
+</details>
 
 
 
