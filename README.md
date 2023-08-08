@@ -384,6 +384,17 @@ To verify the synthesis output, we use the iverilog simulator which is given the
 
 <details>
 <summary><strong>Lab using Yosys and Sky130 PDKs</strong></summary>
+
+Under this section, we go through how to invoke the synthesizer yosys and synthesize the design. For the demonstration, we have taken the synthesis of mux, the good_mux.v file, which we have previously simulated before. 
+
+![yosys_lab_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/24e98dd7-b81c-4398-a0cb-f5d5bf872813)
+
+![yosys_lab_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/e3861c1c-4493-4fe1-822b-7e5179d95ab0)
+
+![yosys_lab_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/c201daec-bc2b-44f7-83c5-77ab3dd37e9d)
+
+![yosys_lab_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/a917b533-9932-46bd-adfb-032cea61855b)
+
   
 </details>
 
