@@ -283,9 +283,19 @@ Screenshot after installation-
 Simulator architecture schematic diagram -
 ![Simulator](https://github.com/Shant1R/Shant_IIITB/assets/59409568/11d0647f-499b-4ea9-ab80-8c6ef20da093)
 
-Under the given repository, Iverilog is used which is an open source simulator.
+Under the given repository, **Iverilog is used which is an open source simulator**.
 - Design is the set of verilog codes with the aim to create a functionality that meets the given specifications. 
 - Testbench is the set of code which provides the stimulas or test vectors to the desgin under test to verify the design working.
+- It is to be noted multiple inputs can be given the design block and multiple outputs can be derived.
+- The testbench is not given any external inputs. Testvectors are given under the testbench itself.
+- The output of the simulator is a VCD file, ie. value change dump file which is viewed using **GTKWave** to visualise the waveform.
+
+Simulation flow of Iverilog - 
+
+![workflow](https://github.com/Shant1R/Shant_IIITB/assets/59409568/076ef120-1a12-42dd-bd50-b65b9eaec88d)
+
+
+
 
 
 
