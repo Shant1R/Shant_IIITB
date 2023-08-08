@@ -360,7 +360,11 @@ There can be multiple ways to generate a mux. Under the given source code. it ch
 
 <details>
 <summary><strong>Introduction to Yosys</strong></summary>
-  
+
+Synthesizer is a tool used to convert RTL to netlist. RTL is a level of abstraction used in digital design to describe how data is transferred and processed between registers in a circuit. It's a key step in converting high-level design concepts into hardware descriptions used for synthesis and implementation in ASIC and FPGA design. Whereas, A netlist is a textual representation of an electronic circuit that describes the connections between components such as gates, flip-flops, and other elements. It's used in various stages of electronic design, including simulation and synthesis, to represent the logical structure and interconnections of the circuit's components.
+
+The synthesizer used under this coursework is Yosys. 
+
 </details>
 
 
