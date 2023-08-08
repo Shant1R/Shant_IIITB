@@ -298,6 +298,9 @@ Simulation flow of Iverilog -
 <details>
 <summary><strong>Introduction to Lab</strong></summary>
 
+<details>
+<summary><strong>Lab Setup</strong></summary>
+
 The first step under the lab setup for the course is to form a seperate directory as VLSI and git clone the course files from the given repository in the code.
 
 
@@ -317,7 +320,7 @@ Upon the cloning, a new folder with the name *sky130RTLDesignAndSynthesisWorksho
 
   
 </details>
-
+</details>
 
 
 # References
