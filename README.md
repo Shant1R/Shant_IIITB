@@ -280,11 +280,13 @@ Screenshot after installation-
 
 - Simulator is a tool to verify that the said design adheres to the functionality to its intended specifications. It works by following the input given and changes the output accordingly, thus one can compare the desired output and the output derived for the said inputs.
 
+Simulator architecture schematic diagram 
+
 
 Under the given repository, Iverilog is used which is an open source simulator.
 - Design is the set of verilog codes with the aim to create a functionality that meets the given specifications. 
 - Testbench is the set of code which provides the stimulas or test vectors to the desgin under test to verify the design working.
-- 
+
 
 
 
