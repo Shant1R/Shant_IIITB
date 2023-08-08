@@ -281,7 +281,7 @@ Screenshot after installation-
 - Simulator is a tool to verify that the said design adheres to the functionality to its intended specifications. It works by following the input given and changes the output accordingly, thus one can compare the desired output and the output derived for the said inputs.
 
 Simulator architecture schematic diagram 
-
+![Simulator](https://github.com/Shant1R/Shant_IIITB/assets/59409568/11d0647f-499b-4ea9-ab80-8c6ef20da
 
 Under the given repository, Iverilog is used which is an open source simulator.
 - Design is the set of verilog codes with the aim to create a functionality that meets the given specifications. 
