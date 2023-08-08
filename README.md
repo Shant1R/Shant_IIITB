@@ -349,51 +349,6 @@ To edit the code, one can directly open the files or use gvim. The code to acces
 $ gvim tb_good_mux.v -o good_mux.v
 ```
 
-```bash
-//good_mux.v
-module good_mux (input i0 , input i1 , input sel , output reg y);
-always @ (*)
-begin
-	if(sel)
-		y <= i1;
-	else 
-		y <= i0;
-end
-endmodule
-
-//tb_good_mux.v
-`timescale 1ns / 1ps
-module tb_good_mux;
-	// Inputs
-	reg i0,i1,sel;
-	// Outputs
-	wire y;
-
-        // Instantiate the Unit Under Test (UUT)
-	good_mux uut (
-		.sel(sel),
-		.i0(i0),
-		.i1(i1),
-		.y(y)
-	);
-
-	initial begin
-	$dumpfile("tb_good_mux.vcd");
-	$dumpvars(0,tb_good_mux);
-	// Initialize Inputs
-	sel = 0;
-	i0 = 0;
-	i1 = 0;
-	#300 $finish;
-	end
-
-always #75 sel = ~sel;
-always #10 i0 = ~i0;
-always #55 i1 = ~i1;
-endmodule
-
-```
-
 
 Editor window - 
 ![code_good_mux](https://github.com/Shant1R/Shant_IIITB/assets/59409568/cf8ca326-755a-4664-ae0b-8c01b8e94723)
