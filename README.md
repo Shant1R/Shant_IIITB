@@ -300,8 +300,7 @@ Simulation flow of Iverilog -
 
 Under this, we will go through how to setup the directory and lab for the course and how to access various files and execute.
 
-<details>
-<summary><strong>Lab Setup</strong></summary>
+**Lab Setup**
 
 The first step under the lab setup for the course is to form a seperate directory as VLSI and git clone the course files from the given repository in the code.
 
@@ -320,8 +319,21 @@ Terminal Window -
 Upon the cloning, a new folder with the name *sky130RTLDesignAndSynthesisWorkshop* is made. Under this folder, there will be several folders, such as lib which contains the standard set library for sky130 which will be used for the synthesis, verilog_files which contains all the source files and testbenches for the experiments to be done. The contents of each folder can be seen by going into the directory and entering ls.
 
 
-  
-</details>
+**Working with iverilog and gtkwave - MUX**
+
+Under this, we go over how load files on iverilog and visualise using gtkwave. The terminal is opened and the directory is set to the verilog_files, where various source files and their respective testbenches are stored. Under this example we will execute the mux using good_mux.v and check the functionality using gtkwave to visualise the dumpfile generated. Both the source file and testbench are loaded to iverilog. 
+
+```bash
+$ cd VLSI
+$ cd sky130RTLDesignAndSynthesisWorkshop
+$ cd verilog_files/
+$ ls
+$ iverilog good_mux.v tb_good_mux.v
+$ ./a.out
+$ gtkwave tb_good_mux.vcd
+```
+
+
 </details>
 
 
