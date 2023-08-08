@@ -298,6 +298,8 @@ Simulation flow of Iverilog -
 <details>
 <summary><strong>Introduction to Lab</strong></summary>
 
+Under this, we will go through how to setup the directory and lab for the course and how to access various files and execute.
+
 <details>
 <summary><strong>Lab Setup</strong></summary>
 
