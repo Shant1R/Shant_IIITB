@@ -363,7 +363,10 @@ There can be multiple ways to generate a mux. Under the given source code. it ch
 
 The RTL design is the behavioural model of the said specification written in an HDL language. For mapping this code to a hardware circuit comes the synthesis. The RTL code is translated to gate level using the front end libraries that are .lib files, through synthesis the netlist file is derived. 
 
-The front end library is also called .lib, which can be explained as a collection for modules for the logic gates for the mapping. It contains various types of the same logic gate, such as 2 and 3 input and gates, and modules for the same gate with different execution speed, which can de decided upon the usecase and required specification. One has to guide the synthesizer for the required execution time, ie, the use of faster and slower transistor models while mapping. This is known as constraints.    
+The front end library is also called .lib, which can be explained as a collection for modules for the logic gates for the mapping. It contains various types of the same logic gate, such as 2 and 3 input and gates, and modules for the same gate with different execution speed, which can de decided upon the usecase and required specification. The speed of the gates depends the load, which for digital circuits are capacitors, thus charging and discharging of capacitors determine the speed of the gate, thus the system. For faster speed, we need transistor with more current sourcing capacity. Thus the need for wider transistors. But wider transistors enables faster processes with the trade off of power and area. Narrow transistors comsumes lesser area and power, but comes with bigger delays. Thus the choice of the gate models is made accordingly. The time delat should small enough to cover the propogation delay and setup times and at the same time large enough that it doesn't cause a hold crisis, that is its bigger than the hold time of the next gate in process.
+
+
+One has to guide the synthesizer for the required execution time, ie, the use of faster and slower transistor models while mapping. This is known as constraints.    
 
 The synthesizer used under this coursework is Yosys. 
 
