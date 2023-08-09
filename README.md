@@ -414,12 +414,19 @@ $ yosys
 
 ![yosys_lab_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/e3861c1c-4493-4fe1-822b-7e5179d95ab0)
 
+- The netlist file is wriiten using *write_verilog* followed by the name for the file.
+- Gvim edittor is used view the netlist file.
+
 ```bash
  read_verilog good_mux_netlist.v
  !gvim good_mux_netlist.v  
 ```
 
 ![yosys_lab_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/c201daec-bc2b-44f7-83c5-77ab3dd37e9d)
+
+- It can seen that the netlist file has extra informations, thus to generate a simple netlist file we add an extra switch.
+- After *write _verilog* we add *-noattr* before the file name.
+- We attain a simpler netlist representation for mux.
 
 ```bash
  read_verilog -noattr good_mux_netlist.v
