@@ -390,6 +390,8 @@ To verify the synthesis output, we use the iverilog simulator which is given the
 
 Under this section, we go through how to invoke the synthesizer yosys and synthesize the design. For the demonstration, we have taken the synthesis of mux, the good_mux.v file, which we have previously simulated before. 
 
+- Step one is to go to the directory for the verilog files and invoke yosys synthesizer.
+
 ```bash
 $ cd Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files/
 $ yosys
