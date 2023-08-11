@@ -534,7 +534,9 @@ write_verilog -noattr multiple_modules_flat.v
 
 ![hvf_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/a9476f35-4ba0-4caa-a035-893227557410)
 
-
+- In the new netlist, we don't see any instances of submodules such as u1 and u2.
+- We get direct instances of *and* and *or* gates under the flat design.
+- **This type of design is known as flat desigin techniques.**
 
 </details>
 
