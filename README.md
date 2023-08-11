@@ -520,6 +520,7 @@ show multiple_modules
 - It is to be more, since this is CMOS technology, we implement the gates using a *nand* gate with inverted inputs for *or* gate and *nor* gate with inverted inputs for *and* gate.
 
 
+
 </details>
 
 
