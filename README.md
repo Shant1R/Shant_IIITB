@@ -493,6 +493,38 @@ Considering a two input *and* gate, and compare different two input and gate.
 </details>
 
 
+## DAY 3 - Combinational and Sequential Optimization
+
+<details>
+
+<summary><strong>Introduction to Optimizations</strong></summary>
+  
+</details>
+
+
+<details>
+
+<summary><strong>Combinational logic Optimizations</strong></summary>
+  
+</details>
+
+
+<details>
+
+<summary><strong>Sequential logic Optimizations</strong></summary>
+  
+</details>
+
+
+<details>
+
+<summary><strong>Sequential Optimizations for Unused Outputs</strong></summary>
+  
+</details>
+
+
+
+
 # References
 
 1. https://github.com/YosysHQ/yosys
