@@ -575,9 +575,17 @@ Reason for having synthesis at submodule level ->
 
 Under this section, we go through all the various types of flops available and how to design and code them efficiently. All the required files are presen in the folder verilog_files. 
 
-To understand the need of flops, we refer the example of a simple circuit with delays. 
+To understand the need of flops, we refer the example of a simple circuit with delays as 2ns for *and* gate and 1ns for *or* gate.
 
 ![ff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d9bd0c57-605b-4c7b-8724-297ab5b812d6)
+
+- Considering the input goes from 0 to 1 for a and b and simultaneously, 1 to 0 for c.
+- Ideally for the transition from (001) to (110), the output should have been a constant at 1, but because of the delay, we get outout as 0 for a brief period of 2ns.
+- This is called a **glitch**.
+
+  
+
+
 
 
   
