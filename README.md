@@ -449,6 +449,11 @@ Under this section, we get a better insight regarding .lib. We have the general 
 
 The name sky130 represemts that the library is based on 130nm technology. Under the nomenclature, we define PVT - process, voltage and temperature. Process refers to the variations due to the fabrication, ie. there will variations in the silicon fabricated even by the same machine. There is variation due to the voltage and temperature as well. Silicon is very sensitive to temperature. All these 3 determines how the silicon is going to perform. We aim to design such that silicon works in all the conditions, across various variations. These three are indicated under the name, tt stands for typical process, 25c indicates the temperature - 25C and 1v80 indicates the voltage of 1.80volts.  It is to be noted, all the models under the said library are designed for the given PVT parameters.
 
+We open the .lib file using gvim to go through various other informations it provides.
+
+![lib_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/f1a46b64-c496-4fd4-82e7-ef43e091964b)
+
+
 
   
 </details>
