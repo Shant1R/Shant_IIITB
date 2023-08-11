@@ -488,7 +488,12 @@ Under this section, we take the case of multiple_modul2s.v from verilog files to
   shant@shant:~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ gvim multiple_modules.v
 ```
 ![hvf_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/16523aee-77cd-4f09-95b0-d8e56f9920da)
- 
+
+Gate level diagram 
+
+![hvf_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/0f16a24d-c1ea-4d38-891b-5d16f5dbcd13)
+
+
 
 </details>
 
