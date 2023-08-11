@@ -462,7 +462,12 @@ We take an example for a cell to understand the contents. Taking the example of 
 ![lib_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/9996a4bc-1328-4436-91f0-551a17dd7d72)
 
 - The given cell executes the logic for 5 inputs, *and* for the first two inputs and *or* it with the next three inputs, finally *not* the final expression.
+- Logic implemented --> !((A1&A2)|B1|C1|D1)
 - Since we got 5 inputs, there are 32 possible outputs. The .lib file contains the power consumption and timing details for all the possibilities.
+
+- Considering a two input *and* gate, and compare different two input and gate.
+- ![lib_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/717b8741-8d21-413e-95b2-968c38eef551)
+
 
 
 
