@@ -545,6 +545,11 @@ write_verilog -noattr multiple_modules_flat.v
 - We get direct instances of *and* and *or* gates under the flat design.
 - **This type of design is known as flat desigin techniques.**
 
+
+We saw how to synthesis the top module, now we will look into synthesis of submodules.
+
+
+
 </details>
 
 
