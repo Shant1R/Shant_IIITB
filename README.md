@@ -457,6 +457,13 @@ We open the .lib file using gvim to go through various other informations it pro
 - it defines the units for various parameters and quanities, such as, 1ns for time, 1V for voltage, 1mA for current, 1kohm for resistance and 1pF for capacitance.
 - It defines the operating conditions as "tt_025C_1v80".
 
+We take an example for a cell to understand the contents. Taking the example of a21110i cell. 
+
+![lib_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/9996a4bc-1328-4436-91f0-551a17dd7d72)
+
+- The given cell executes the logic for 5 inputs, *and* for the first two inputs and *or* it with the next three inputs, finally *not* the final expression.
+- Since we got 5 inputs, there are 32 possible outputs. The .lib file contains the power consumption and timing details for all the possibilities.
+
 
 
   
