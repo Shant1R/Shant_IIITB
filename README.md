@@ -496,7 +496,6 @@ Gate level diagram
 We go into the directory for verilog files and invole the model.
 
 ```bash
-
 $ cd Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files
 $ yosys
 read_liberty -lib ~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
