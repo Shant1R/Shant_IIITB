@@ -493,6 +493,9 @@ Gate level diagram
 
 ![hvf_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/0f16a24d-c1ea-4d38-891b-5d16f5dbcd13)
 
+![hvf_1_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/820d6586-3069-4f97-b96f-815046e55ce4)
+
+
 
 
 </details>
