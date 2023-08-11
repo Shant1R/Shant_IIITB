@@ -483,6 +483,13 @@ Considering a two input *and* gate, and compare different two input and gate.
 
 <summary><strong>Heirarchial vs Flat Synthesis</strong></summary>
 
+Under this section, we take the case of multiple_modul2s.v from verilog files to have a better unstanding.
+```bash
+  shant@shant:~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ gvim multiple_modules.v
+```
+![hvf_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/16523aee-77cd-4f09-95b0-d8e56f9920da)
+ 
+
 </details>
 
 
