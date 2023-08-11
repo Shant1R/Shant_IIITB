@@ -453,6 +453,10 @@ We open the .lib file using gvim to go through various other informations it pro
 
 ![lib_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/f1a46b64-c496-4fd4-82e7-ef43e091964b)
 
+- It defines the technology begin used "CMOS" and the delay model as "table_lookup"
+- it defines the units for various parameters and quanities, such as, 1ns for time, 1V for voltage, 1mA for current, 1kohm for resistance and 1pF for capacitance.
+- It defines the operating conditions as "tt_025C_1v80".
+
 
 
   
