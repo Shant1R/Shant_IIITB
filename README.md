@@ -447,6 +447,19 @@ $ yosys
 </details>
 
 
+<details>
+
+<summary><strong>Heirarchial vs Flat Synthesis</strong></summary>
+
+</details>
+
+
+<details>
+
+<summary><strong>Various Flop Coding Styles and Optimizations</strong></summary>
+  
+</details>
+
 
 # References
 1. https://github.com/YosysHQ/yosys
