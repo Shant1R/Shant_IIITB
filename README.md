@@ -438,7 +438,7 @@ $ yosys
   
 </details>
 
-## DAY 2
+## DAY 2 - Timing libs, Hierarchical vs Flat synthesis and effective flop coding styles
 
 <details>
 
