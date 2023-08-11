@@ -465,10 +465,14 @@ We take an example for a cell to understand the contents. Taking the example of 
 - Logic implemented --> !((A1&A2)|B1|C1|D1)
 - Since we got 5 inputs, there are 32 possible outputs. The .lib file contains the power consumption and timing details for all the possibilities.
 
-- Considering a two input *and* gate, and compare different two input and gate.
-- ![lib_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/717b8741-8d21-413e-95b2-968c38eef551)
 
+Considering a two input *and* gate, and compare different two input and gate.
 
+![lib_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/717b8741-8d21-413e-95b2-968c38eef551)
+
+- The lib files conatins the power and timing information for the 4 possible outcomes.
+- All three taken cells are 2 input and gates, but differ in their areas, and2_4 has a larger area than area2_2 and consequently more than and2_0.
+- Having a larger area refers to the use of a wider cell. Wider cells will be faster, but consumes more power. This can be seen in the datials under the lib file.
 
 
   
