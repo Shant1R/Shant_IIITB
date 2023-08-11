@@ -514,10 +514,25 @@ show multiple_modules
 - **This type of design is called an heirarchial design.**
 - We generate the netlist file for the design.
 
+```bash
+write_verilog -noattr multiple_modules_hier.v
+!gvim multiple_modules_hier.v
+```
+
 ![hvf_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/620892c8-1681-4d46-911e-1e7a2e4a8ee7)
 
 - In the netlist generated, it is observed that the hierarchy is maintained. The top module has instances of sub moduke 1 and 2, and the two modules are seperately defined implementing the *and* and *or* gates.
 - It is to be more, since this is CMOS technology, we implement the gates using a *nand* gate with inverted inputs for *or* gate and *nor* gate with inverted inputs for *and* gate.
+
+Now we will look into flat design techcnique.
+
+```bash
+flatten
+write_verilog -noattr multiple_modules_flat.v
+!gvim multiple_modules_flat.v
+```
+
+![hvf_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/a9476f35-4ba0-4caa-a035-893227557410)
 
 
 
