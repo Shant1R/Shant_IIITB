@@ -548,6 +548,23 @@ write_verilog -noattr multiple_modules_flat.v
 
 We saw how to synthesis the top module, now we will look into synthesis of submodules.
 
+```bash
+$ cd Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+$ yosys
+read_liberty -lib ~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top sub_module1
+abc -liberty ~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+```
+
+![hvf_6](https://github.com/Shant1R/Shant_IIITB/assets/59409568/48519618-7a15-4695-a075-c0ca9acb4853)
+
+- We only see submodule 1, we don't get to see the multiple module or submodule 2.
+
+Reason for having synthesis at submodule level ->
+- In case my design has multiple instances of same module, we prefer to synthesis it once and the replicate it as many times required and stitch it to the main module.
+- It supports *divide and conqure appraoch*. In case the design is massive, we give small portions to the tool instead of the entire design. This helps in generating an optimised netlist for the complete desgin and supports reusebility.
 
 
 </details>
