@@ -443,7 +443,11 @@ $ yosys
 <details>
 
 <summary><strong>Introduction to .lib</strong></summary>
-Under this section, we get a better insight regarding .lib. We have the general overview that it stores the models of all the standards cells, various variations and flavours as per the need of specification provided. Getting an insight into the .lib file, we start with the file name - ```bash sky130_fd_sc_hd__tt_025C_1v80```.
+Under this section, we get a better insight regarding .lib. We have the general overview that it stores the models of all the standards cells, various variations and flavours as per the need of specification provided. Getting an insight into the .lib file, we start with the file name -  
+
+*bash sky130_fd_sc_hd__tt_025C_1v80*
+
+
   
 </details>
 
