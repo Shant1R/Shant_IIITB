@@ -528,6 +528,12 @@ Now we will look into flat design techcnique.
 
 ```bash
 flatten
+show multiple_modules
+```
+
+![hvf_5](https://github.com/Shant1R/Shant_IIITB/assets/59409568/9428f816-7ab6-49f6-a3d4-0c527719364c)
+
+```bash
 write_verilog -noattr multiple_modules_flat.v
 !gvim multiple_modules_flat.v
 ```
