@@ -511,7 +511,13 @@ show multiple_modules
 
 - We get the image of the top module.
 - We don't get to see the and and or gates. We see the modules u1 and u2, which are the instances of the gates.
-- **This type of design is called an heirarchial design.**  
+- **This type of design is called an heirarchial design.**
+- We generate the netlist file for the design.
+
+![hvf_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/620892c8-1681-4d46-911e-1e7a2e4a8ee7)
+
+- In the netlist generated, it is observed that the hierarchy is maintained. The top module has instances of sub moduke 1 and 2, and the two modules are seperately defined implementing the *and* and *or* gates.
+- It is to be more, since this is CMOS technology, we implement the gates using a *nand* gate with inverted inputs for *or* gate and *nor* gate with inverted inputs for *and* gate.
 
 
 </details>
