@@ -440,6 +440,12 @@ $ yosys
 
 ## DAY 2
 
+<details>
+
+<summary><strong>Introduction to .lib</strong></summary>
+  
+</details>
+
 
 
 # References
