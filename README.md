@@ -483,7 +483,7 @@ Considering a two input *and* gate, and compare different two input and gate.
 
 <summary><strong>Heirarchial vs Flat Synthesis</strong></summary>
 
-Under this section, we take the case of multiple_modul2s.v from verilog files to have a better unstanding.
+Under this section, we go over what is heirchial synthesis and flat synthesis. For this, we  have taken the case of multiple_modul2s.v from verilog files to have a better unstanding.
 ```bash
   shant@shant:~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ gvim multiple_modules.v
 ```
@@ -493,7 +493,26 @@ Gate level diagram
 
 ![hvf_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/0f16a24d-c1ea-4d38-891b-5d16f5dbcd13)
 
+We go into the directory for verilog files and invole the model.
 
+```bash
+
+$ cd Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+$ yosys
+read_liberty -lib ~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ~/Documents/ASICs/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show multiple_modules
+```
+
+- As we hit show, we expect to attain a similar schematic we had drew in the previous image.
+  
+![hvf_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/a55d9d7a-ab21-430c-8174-770f422220f5)
+
+- We get the image of the top module.
+- We don't get to see the and and or gates. We see the modules u1 and u2, which are the instances of the gates.
+- **This type of design is called an heirarchial design.**  
 
 
 </details>
