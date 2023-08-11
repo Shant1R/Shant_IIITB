@@ -572,6 +572,14 @@ Reason for having synthesis at submodule level ->
 <details>
 
 <summary><strong>Various Flop Coding Styles and Optimizations</strong></summary>
+
+Under this section, we go through all the various types of flops available and how to design and code them efficiently. All the required files are presen in the folder verilog_files. 
+
+To understand the need of flops, we refer the example of a simple circuit with delays. 
+
+![ff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d9bd0c57-605b-4c7b-8724-297ab5b812d6)
+
+
   
 </details>
 
