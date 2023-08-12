@@ -604,11 +604,54 @@ Types of flops
 
 ![ff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/77037d1a-28bd-434f-9ed4-ddb57613973c)
 
-- Under column of the image above, shows the verilog code and circuit structure for a d flipflop that accounts for sync as well as async resets.  
+- Under column of the image above, shows the verilog code and circuit structure for a d flipflop that accounts for sync as well as async resets.
 
 
+Now, we go through simuations of async reset, async set and sync async reset and observe the waveforms using gtkwave to have a better understand.
 
+- Code --> dff_asyncres.v
 
+```bash
+module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
+always @ (posedge clk , posedge async_reset)
+begin
+	if(async_reset)
+		q <= 1'b0;
+	else	
+		q <= d;
+end
+endmodule
+```
+
+- Code --> dff__async_set.v
+
+```bash
+module dff_async_set ( input clk ,  input async_set , input d , output reg q );
+always @ (posedge clk , posedge async_set)
+begin
+	if(async_set)
+		q <= 1'b1;
+	else	
+		q <= d;
+end
+endmodule
+```
+
+- Code --> dff_asyncres_syncres.v
+
+```bash
+module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
+always @ (posedge clk , posedge async_reset)
+begin
+	if(async_reset)
+		q <= 1'b0;
+	else if (sync_reset)
+		q <= 1'b0;
+	else	
+		q <= d;
+end
+endmodule
+```
 
 
 
