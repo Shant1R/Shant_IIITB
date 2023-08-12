@@ -609,7 +609,7 @@ Types of flops
 
 Now, we go through simuations of async reset, async set and sync async reset and observe the waveforms using gtkwave to have a better understand.
 
-- Code --> dff_asyncres.v
+Code --> dff_asyncres.v
 
 ```bash
 module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
@@ -622,8 +622,19 @@ begin
 end
 endmodule
 ```
+- Upon execution on terminal using iverilog and gtkwave
 
-- Code --> dff__async_set.v
+```bash
+iverilog dff_asyncres.v tb_dff_asyncres.v
+./a.out
+gtkwave tb_dff_asyncres.vcd
+```
+![dff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/59e993cf-c5f4-40b7-b66d-085c17be91c7)
+
+- We can observe that the output q goes to 0 when the reset is encountered.
+
+
+Code --> dff__async_set.v
 
 ```bash
 module dff_async_set ( input clk ,  input async_set , input d , output reg q );
@@ -637,7 +648,47 @@ end
 endmodule
 ```
 
-- Code --> dff_asyncres_syncres.v
+- Upon execution on terminal using iverilog and gtkwave
+
+```bash
+iverilog dff_async_set.v tb_dff_async_set.v
+./a.out
+gtkwave tb_dff_async_set.vcd
+```
+
+![dff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/e13a4ed4-ea09-4148-9b09-b828893bce82)
+
+- We can observe that the output q goes to 1 as soon as we encounter the set irrespective of that clock.
+
+
+Code --> dff_syncres.v
+
+```bash
+module dff_syncres ( input clk ,  input sync_reset , input d , output reg q );
+always @ (posedge clk )
+begin
+	if(sync_reset)
+		q <= 1'b0;
+	else	
+		q <= d;
+end
+endmodule
+```
+
+- Upon execution on terminal using iverilog and gtkwave
+
+```bash
+iverilog dff_syncres.v tb_dff_syncres.v
+./a.out
+gtkwave tb_dff_syncres.vcd
+```
+
+![dff_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/344634b7-6aec-486b-9dd4-7ce7d7a9ec61)
+
+- It is observed that the output q is set to 0 at the next clock pulse when the reset is encountered, thus it is the case of sync reset.
+
+
+Code --> dff_asyncres_syncres.v
 
 ```bash
 module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
@@ -653,8 +704,16 @@ end
 endmodule
 ```
 
+- Upon execution on terminal using iverilog and gtkwave
 
+```bash
+iverilog dff_asyncres_syncres.v tb_dff_asyncres_syncres.v
+./a.out
+gtkwave tb_dff_asyncres_syncres.vcd
+```
+![dff_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/2bda822d-c54f-4207-b2ba-4b61aae705ba)
 
+- We can observe that output q goes to 0 when encountered the async reset and waits for the next clock edge to set q to 0 in case of encounter with sync reset.
 
 
   
