@@ -609,7 +609,7 @@ Types of flops
 
 Now, we go through simuations of async reset, async set and sync async reset and observe the waveforms using gtkwave to have a better understand.
 
-Code --> dff_asyncres.v
+***Code --> dff_asyncres.v***
 
 ```bash
 module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
@@ -627,9 +627,11 @@ endmodule
 ![dff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/59e993cf-c5f4-40b7-b66d-085c17be91c7)
 
 - We can observe that the output q goes to 0 when the reset is encountered.
+- Now we synthesis the design using yosys.
 
+![dff_syn_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/67fbc5d1-0016-4c7d-9917-66bddc85bb39)
 
-Code --> dff__async_set.v
+***Code --> dff__async_set.v***
 
 ```bash
 module dff_async_set ( input clk ,  input async_set , input d , output reg q );
@@ -648,9 +650,12 @@ endmodule
 ![dff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/e13a4ed4-ea09-4148-9b09-b828893bce82)
 
 - We can observe that the output q goes to 1 as soon as we encounter the set irrespective of that clock.
+-Now we synthesis the design using yosys. 
+
+![dff_syn_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/8070cd5f-035b-433b-a16b-b3ff3bc9c232)
 
 
-Code --> dff_syncres.v
+***Code --> dff_syncres.v***
 
 ```bash
 module dff_syncres ( input clk ,  input sync_reset , input d , output reg q );
@@ -669,9 +674,12 @@ endmodule
 ![dff_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/344634b7-6aec-486b-9dd4-7ce7d7a9ec61)
 
 - It is observed that the output q is set to 0 at the next clock pulse when the reset is encountered, thus it is the case of sync reset.
+- Now we synthesis the design using yosys.
+
+![dff_syn_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/83e54797-cb25-4734-97e9-2269e25b2f39)
 
 
-Code --> dff_asyncres_syncres.v
+***Code --> dff_asyncres_syncres.v***
 
 ```bash
 module dff_asyncres_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
@@ -692,6 +700,10 @@ endmodule
 ![dff_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/2bda822d-c54f-4207-b2ba-4b61aae705ba)
 
 - We can observe that output q goes to 0 when encountered the async reset and waits for the next clock edge to set q to 0 in case of encounter with sync reset.
+- Now we synthesis the design using yosys.
+
+![dff_syn_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6e929a9e-8a5b-4e7f-993c-39882bc6b734)
+
 
 
   
