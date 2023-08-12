@@ -585,8 +585,15 @@ To understand the need of flops, we refer the example of a simple circuit with d
 - More the number of combinational circuits, more number of glitches appear, giving a glitchy output.
 - To avoid this, we need an element to store the value. Comes the flops into picture.
 - We use a D flipflop. They are a storage element. They are placed between combinational circuits and changes value only at clock edge.
+
+![ff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/eb9ab8c7-a87c-4ca0-89ec-ecb36361032e)
+
+  
 - Now even if the the input of the clock is glitching, we attain a stable output.
 - **NOTE** --> We need to initailise the flops, else the combinational circuits gives a garbage value. For this purpose we have reset and set pins.
+
+
+
   
 
 
