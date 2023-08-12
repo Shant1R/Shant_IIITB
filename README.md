@@ -593,7 +593,13 @@ To understand the need of flops, we refer the example of a simple circuit with d
 
   
 - Now even if the the input of the clock is glitching, we attain a stable output.
-- **NOTE** --> We need to initailise the flops, else the combinational circuits gives a garbage value. For this purpose we have reset and set pins.
+- **NOTE** --> We need to initailise the flops, else the combinational circuits gives a garbage value. For this purpose we have reset and set pins. They can be asynchoronous and synchronous.
+
+We discuss how to design a flop with asynchornous reset.
+
+
+
+
 
 
 
