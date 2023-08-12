@@ -582,6 +582,9 @@ To understand the need of flops, we refer the example of a simple circuit with d
 - Considering the input goes from 0 to 1 for a and b and simultaneously, 1 to 0 for c.
 - Ideally for the transition from (001) to (110), the output should have been a constant at 1, but because of the delay, we get outout as 0 for a brief period of 2ns.
 - This is called a **glitch**.
+
+![ff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/f75878fe-d695-44cf-b498-f516b7d2a028)
+  
 - More the number of combinational circuits, more number of glitches appear, giving a glitchy output.
 - To avoid this, we need an element to store the value. Comes the flops into picture.
 - We use a D flipflop. They are a storage element. They are placed between combinational circuits and changes value only at clock edge.
