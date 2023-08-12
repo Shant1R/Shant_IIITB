@@ -624,11 +624,6 @@ endmodule
 ```
 - Upon execution on terminal using iverilog and gtkwave
 
-```bash
-iverilog dff_asyncres.v tb_dff_asyncres.v
-./a.out
-gtkwave tb_dff_asyncres.vcd
-```
 ![dff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/59e993cf-c5f4-40b7-b66d-085c17be91c7)
 
 - We can observe that the output q goes to 0 when the reset is encountered.
@@ -650,12 +645,6 @@ endmodule
 
 - Upon execution on terminal using iverilog and gtkwave
 
-```bash
-iverilog dff_async_set.v tb_dff_async_set.v
-./a.out
-gtkwave tb_dff_async_set.vcd
-```
-
 ![dff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/e13a4ed4-ea09-4148-9b09-b828893bce82)
 
 - We can observe that the output q goes to 1 as soon as we encounter the set irrespective of that clock.
@@ -676,12 +665,6 @@ endmodule
 ```
 
 - Upon execution on terminal using iverilog and gtkwave
-
-```bash
-iverilog dff_syncres.v tb_dff_syncres.v
-./a.out
-gtkwave tb_dff_syncres.vcd
-```
 
 ![dff_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/344634b7-6aec-486b-9dd4-7ce7d7a9ec61)
 
@@ -706,11 +689,6 @@ endmodule
 
 - Upon execution on terminal using iverilog and gtkwave
 
-```bash
-iverilog dff_asyncres_syncres.v tb_dff_asyncres_syncres.v
-./a.out
-gtkwave tb_dff_asyncres_syncres.vcd
-```
 ![dff_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/2bda822d-c54f-4207-b2ba-4b61aae705ba)
 
 - We can observe that output q goes to 0 when encountered the async reset and waits for the next clock edge to set q to 0 in case of encounter with sync reset.
