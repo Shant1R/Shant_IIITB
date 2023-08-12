@@ -654,7 +654,6 @@ Types of flops
 
 
 
-
 # References
 
 1. https://github.com/YosysHQ/yosys
