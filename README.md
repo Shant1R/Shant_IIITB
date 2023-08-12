@@ -595,7 +595,18 @@ To understand the need of flops, we refer the example of a simple circuit with d
 - Now even if the the input of the clock is glitching, we attain a stable output.
 - **NOTE** --> We need to initailise the flops, else the combinational circuits gives a garbage value. For this purpose we have reset and set pins. They can be asynchoronous and synchronous.
 
-We discuss how to design a flop with asynchornous reset.
+Types of flops
+- Flops can be designed to be asynchronous or synchronous. It depends on whether the flop is sensitive to the reset and set parameters.
+- Under asynchronous, the flop is sensitive to the reset or set, ie the design checks for them and the moment, reset is encountered, the output is pulled to **0** irrespective of the clock. For asynchronous set, the output is pulled to **1**.
+- The circuit design and timing diagram along with verilog code is displayed under the image below under column 1.
+- Under the case of synchronous reset, the output is pulled to **0** at the next clock cycle. The design and timing diagram along the verilog code is shown under the column 2 of the image below.
+- Sync reset can be understodd as the input is pulled to 0, thus output becomes 0 for next clock cycle.
+
+![ff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/77037d1a-28bd-434f-9ed4-ddb57613973c)
+
+- Under column of the image above, shows the verilog code and circuit structure for a d flipflop that accounts for sync as well as async resets.  
+
+
 
 
 
