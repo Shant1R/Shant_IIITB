@@ -1114,6 +1114,9 @@ endmodule
 
 Under this section, we look into how yosys synthesizer optimises the design in case of unused bits in the output. For this we have taken a 3 bit counter. In case 1, only the LSB is taken as final output, thus the first two are left unused. In case two, we take the entire 3 bits as output. 
 
+![sp_opt_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6f9028ff-4752-45f1-a7c6-839b377ae326)
+
+
 **Case 1 -- only using count[0]**
 
 - RTL code
