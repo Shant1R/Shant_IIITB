@@ -1169,8 +1169,14 @@ endmodule
 - In the yosys generation, we see the design has encorporated 3 dff for the 3 bit counter.
 - It is evident that the yosys synthesizer optimizes for the unsed bits in the output. This so important as illustrated because it saves a ton of space, and speed, and improves efficiency of the final design.
 
-  
 </details>
+
+
+
+## DAY 4 - GLS, Blocking vs Non-blocking and Synthesys-Simulation Mismatch
+
+## DAY 5 - If, case, for loop and for generate
+
 
 
 
