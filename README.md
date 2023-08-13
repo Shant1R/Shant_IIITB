@@ -1034,7 +1034,7 @@ endmodule
 
 - Optimised design using yosys
 
-
+![opt_dff_7](https://github.com/Shant1R/Shant_IIITB/assets/59409568/9afb81da-87c4-4e0a-8b09-952e3a1879cb)
 
 
 
@@ -1068,6 +1068,7 @@ endmodule
 
 - Optimised design using yosys
 
+![opt_dff_8](https://github.com/Shant1R/Shant_IIITB/assets/59409568/9657f9e9-2820-4786-b2db-f82bc1473cc0)
 
 
 
@@ -1100,9 +1101,9 @@ endmodule
 
 ![opt_dff_6](https://github.com/Shant1R/Shant_IIITB/assets/59409568/540885ac-eb0c-42a0-beef-615026a62dff)
 
-
 - Optimised design using yosys
 
+![opt_dff_9](https://github.com/Shant1R/Shant_IIITB/assets/59409568/40a57160-8f3c-4b5e-a0c6-3af9423b2b1b)
 
 
 
