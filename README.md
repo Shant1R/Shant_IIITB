@@ -998,7 +998,114 @@ endmodule
 
 ![opt_dff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/dc3143f4-71ff-4417-8461-9f7d54c9c14a)
 
-- It is seen that the design has been optimised to have no dff in the final models. 
+
+- It is seen that the design has been optimised to have no dff in the final models.
+
+
+
+**Lab 3 - dff_const3.v**
+
+- RTL file 
+```bash
+module dff_const2(input clk, input reset, output reg q);
+module dff_const3(input clk, input reset, output reg q);
+reg q1;
+
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+		q <= 1'b1;
+		q1 <= 1'b0;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+end
+
+endmodule
+```
+
+- Simulation report using iverilog and gtkwave
+
+![opt_dff_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/142eb530-bb2f-4f8c-8ac4-185ea1016609)
+
+- Optimised design using yosys
+
+
+
+
+
+**Lab 4 - dff_const4.v**
+
+- RTL file 
+```bash
+module dff_const4(input clk, input reset, output reg q);
+reg q1;
+
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+		q <= 1'b1;
+		q1 <= 1'b1;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+end
+
+endmodule
+```
+
+- Simulation report using iverilog and gtkwave
+
+![opt_dff_5](https://github.com/Shant1R/Shant_IIITB/assets/59409568/e084b37b-d947-49cc-8a52-b3a419242f82)
+
+- Optimised design using yosys
+
+
+
+
+**Lab 5 - dff_const5.v**
+
+- RTL file 
+```bash
+
+module dff_const5(input clk, input reset, output reg q);
+reg q1;
+
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+		q <= 1'b0;
+		q1 <= 1'b0;
+	end
+	else
+	begin
+		q1 <= 1'b1;
+		q <= q1;
+	end
+end
+
+endmodule
+```
+
+- Simulation report using iverilog and gtkwave
+
+![opt_dff_6](https://github.com/Shant1R/Shant_IIITB/assets/59409568/540885ac-eb0c-42a0-beef-615026a62dff)
+
+
+- Optimised design using yosys
+
+
+
+
   
 </details>
 
