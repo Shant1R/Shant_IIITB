@@ -1114,7 +1114,7 @@ endmodule
 
 Under this section, we look into how yosys synthesizer optimises the design in case of unused bits in the output. For this we have taken a 3 bit counter. In case 1, only the LSB is taken as final output, thus the first two are left unused. In case two, we take the entire 3 bits as output. 
 
-**Case 1**
+**Case 1 -- only using count[0]**
 
 - RTL code
 
@@ -1139,7 +1139,7 @@ endmodule
 
 - In the image, it is observed that is integrated only one dff for optimised hardware design.
 
-**Case 2**
+**Case 2 -- using all three bits count[2], count[1] and count[0]**
 
 - RTL code for the changed file.
 
@@ -1164,7 +1164,7 @@ endmodule
 ![sp_opt](https://github.com/Shant1R/Shant_IIITB/assets/59409568/4c97002c-e620-492b-88ec-b2323052d963)
 
 - In the yosys generation, we see the design has encorporated 3 dff for the 3 bit counter.
-- It is evident that the yosys synthesizer optimizes for the unsed bits in the output.
+- It is evident that the yosys synthesizer optimizes for the unsed bits in the output. This so important as illustrated because it saves a ton of space, and speed, and improves efficiency of the final design.
 
   
 </details>
