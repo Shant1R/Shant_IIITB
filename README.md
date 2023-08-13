@@ -830,16 +830,46 @@ Under this section, we go through 6 lab experiments and synthesis them using yos
 
 **Lab 1 - opt_check.v**
 
+- RTL file 
+```bash
+
+```
+
 **Lab 2 - opt_check2.v**
+
+- RTL file 
+```bash
+
+```
 
 **Lab 3 - opt_check3.v**
 
+- RTL file 
+```bash
+
+```
+
 **Lab 4 - opt_check4.v**
+
+- RTL file 
+```bash
+
+```
 
 **Lab 5 - multiple_module_opt.v**
 
+- RTL file 
+```bash
+
+```
+
 **Lab 6 - multiple_module_opt.v2**
-  
+
+- RTL file 
+```bash
+
+```
+
 </details>
 
 
