@@ -1105,15 +1105,58 @@ endmodule
 
 ![opt_dff_9](https://github.com/Shant1R/Shant_IIITB/assets/59409568/40a57160-8f3c-4b5e-a0c6-3af9423b2b1b)
 
-
-
-  
 </details>
 
 
 <details>
 
 <summary><strong>Sequential Optimizations for Unused Outputs</strong></summary>
+
+Under this section, we look into how yosys synthesizer optimises the design in case of unused bits in the output. For this we have taken a 3 bit counter. In case 1, only the LSB is taken as final output, thus the first two are left unused. In case two, we take the entire 3 bits as output. 
+
+**Case 1**
+
+- RTL code
+
+```bash
+module counter_opt (input clk , input reset , output q);
+reg [2:0] count;
+assign q = count[0];
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+end
+
+endmodule
+```
+![sp_opt1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/031afa01-1030-42d7-8f83-097505eb9cf0)
+
+- In the image, it is observed that is integrated only one dff for optimised hardware design.
+
+**Case 2**
+
+- RTL code
+
+```bash
+module counter_opt (input clk , input reset , output q);
+reg [2:0] count;
+assign q = count[2:0] == 3'b100;
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+		count <= 3'b000;
+	else
+		count <= count + 1;
+end
+
+endmodule
+```
+
   
 </details>
 
