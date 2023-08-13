@@ -944,6 +944,55 @@ endmodule
 <details>
 
 <summary><strong>Sequential logic Optimizations</strong></summary>
+
+Under this section, we go over optimisation for sequential logic designs. 
+
+**Lab 1 - dff_const1.v**
+
+- RTL file 
+```bash
+module dff_const1(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b0;
+	else
+		q <= 1'b1;
+end
+
+endmodule
+```
+
+- Simulation report using iverilog and gtkwave
+
+![opt_dff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/7541a097-4e52-4a8d-ab0f-c59a1bd8933c)
+
+- Optimised design using yosys
+
+  
+**Lab 2 - dff_const2.v**
+
+- RTL file 
+```bash
+module dff_const2(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b1;
+	else
+		q <= 1'b1;
+end
+
+endmodule
+```
+
+- Simulation report using iverilog and gtkwave
+
+![opt_dff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/8dbb8cae-05ed-446d-af80-f116b36a9d3f)
+
+- Optimised design using yosys
+
+
   
 </details>
 
