@@ -806,9 +806,12 @@ Under this the flop can be optimised in case the output of the flop is constant,
 
 - The input of D ff is grounded, ir d=0, and the reset parameter is given. Here even if the reset is given or not the output output of the flop is constant at 0, hence the overall outcome is constant.
 
+![opt_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6fd15cfc-6bfe-4c8e-a452-71439110468f)
+
 
 - Now taking the same circuit, but instead of reset, we give set. Now when the set is 1, the flop output follows set. As soon as set is removed, the output goes to 0 at the next positive clock edge. Thus now we can't remove the flop from design, Thus we retain the flop. 
 
+![opt_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/5dd4680f-b2dc-4596-9916-f359ec6bcfbd)
 
   
 </details>
