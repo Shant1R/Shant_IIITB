@@ -813,6 +813,11 @@ Under this the flop can be optimised in case the output of the flop is constant,
 
 ![opt_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/5dd4680f-b2dc-4596-9916-f359ec6bcfbd)
 
+**Advanced Methods for Sequential logic Optimisation**
+
+- **State optimization** in ASIC design is about finding the best trade-offs among performance, power efficiency, area utilization, and other design objectives to create an effective and efficient custom integrated circuit for a particular application.
+- **Re-timing** is the technique used to optimize the timing performance of a digital circuit by moving registers (flip-flops) to different locations within the circuit without changing its functionality. The primary goal of retiming is to improve the critical path delay, which is the longest path through the logic circuit that determines the maximum operating frequency.
+- **Sequential logic cloning** or **flip-flop cloning** or **state machine cloning** is the technique used to replicate or duplicate certain portions of sequential logic circuits. This technique is employed to improve performance, reduce critical path delays, or optimize power consumption in a design without altering its functional behavior.
   
 </details>
 
