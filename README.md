@@ -969,6 +969,10 @@ endmodule
 
 - Optimised design using yosys
 
+![opt_dff_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/7b9a8f1f-4839-48de-8a12-0fcbb08599e8)
+![opt_dff_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/281fe4a8-e6c8-442c-a7a7-23109e0d2ddf)
+
+- It is seen that the design an one dff in the model.
   
 **Lab 2 - dff_const2.v**
 
@@ -992,7 +996,9 @@ endmodule
 
 - Optimised design using yosys
 
+![opt_dff_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/dc3143f4-71ff-4417-8461-9f7d54c9c14a)
 
+- It is seen that the design has been optimised to have no dff in the final models. 
   
 </details>
 
