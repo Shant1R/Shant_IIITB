@@ -786,7 +786,7 @@ Consider the logic circuit under figure(I), if we ground input a, ie, a=0, the e
 
 **Boolean Logic**
 
-Consider we try to implement a logic using tertiary operator, such as **y = a?(b?c:(c?a:0)):(!c)**. This can be mapped using three 2 input muxs as shown in the figure.
+Consider we try to implement a logic using tertiary operator, such as **y = a?(b?c:(c?a:0)):(!c)**. This can be mapped using three 2 input muxs as shown in the figure
 
 ![opt_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/de299ebb-619d-4a39-ab9e-667dd355c99b)
 
@@ -800,6 +800,15 @@ The synthesis tool performs these optimisations to come up with an effective and
 **Methods for Sequential logic Optimization**
 - Basic --> Sequential Constant Propogation
 - Advanced methods.
+
+**Sequential Constant Propogation**
+
+Under this the flop can be optimised in case the output of the flop is constant, else if the output of flop changes, the entire flop is retained. To understand this we take two examples
+
+- The input of D ff is grounded, ir d=0, and the reset parameter is given. Here even if the reset is given or not the output output of the flop is constant at 0, hence the overall outcome is constant.
+
+
+- Now taking the same circuit, but instead of reset, we give set. Now when the set is 1, the flop output follows set. As soon as set is removed, the output goes to 0 at the next positive clock edge. Thus now we can't remove the flop from design, Thus we retain the flop. 
 
 
   
