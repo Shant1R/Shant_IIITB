@@ -769,6 +769,39 @@ endmodule
 <details>
 
 <summary><strong>Introduction to Optimizations</strong></summary>
+Under this section, we will look into how to optimise our design for combinational logic as well as sequentail logic designs. The optimised designs are defined in terms of area and power savings.
+
+<br></br>
+**Methods for Combinational logic Optimization**
+- Direct Method --> *Constant Propogation*
+- Boolean logic meth0d --> *K-map or Quine McKluskey*
+
+**Constant Propogation**
+
+Consider the logic circuit under figure(I), if we ground input a, ie, a=0, the entire expression goes from y=(a.b+c)' to y=c'.
+
+![opt_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/98ab0ccf-8237-4a23-a956-8754e4da080c)
+
+- For implementing figure(I), we require in total of 6 transitors under CMOS technology. Whereas, for the final ciruit under fig(II) with the given constraints, we require only 2 transistors under CMOS tech. Thus we can see that we have reduces the number of transistors, hence better optimised.
+
+**Boolean Logic**
+
+Consider we try to implement a logic using tertiary operator, such as **y = a?(b?c:(c?a:0)):(!c)**. This can be mapped using three 2 input muxs as shown in the figure.
+
+![opt_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/de299ebb-619d-4a39-ab9e-667dd355c99b)
+
+- The output generated using the circuit shown is **y = a'.b' + a.[ b.c + b'.a.c ]**, which is clear that is not optimised. The logic can be optimised using K-maps. The optimised logic comes as **~( a ^ b )**.
+
+
+The synthesis tool performs these optimisations to come up with an effective and optimised design.
+
+<br></br>
+
+**Methods for Sequential logic Optimization**
+- Basic --> Sequential Constant Propogation
+- Advanced methods.
+
+
   
 </details>
 
