@@ -795,7 +795,6 @@ Consider we try to implement a logic using tertiary operator, such as **y = a?(b
 
 The synthesis tool performs these optimisations to come up with an effective and optimised design.
 
-<br></br>
 
 **Methods for Sequential logic Optimization**
 - Basic --> Sequential Constant Propogation
