@@ -832,42 +832,85 @@ Under this section, we go through 6 lab experiments and synthesis them using yos
 
 - RTL file 
 ```bash
-
+module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+endmodule
 ```
 
 **Lab 2 - opt_check2.v**
 
 - RTL file 
 ```bash
-
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
 ```
 
 **Lab 3 - opt_check3.v**
 
 - RTL file 
 ```bash
-
+module opt_check3 (input a , input b, input c , output y);
+	assign y = a?(c?b:0):0;
+endmodule
 ```
 
 **Lab 4 - opt_check4.v**
 
 - RTL file 
 ```bash
-
+module opt_check4 (input a , input b , input c , output y);
+ assign y = a?(b?(a & c ):c):(!c);
+ endmodule
 ```
 
 **Lab 5 - multiple_module_opt.v**
 
 - RTL file 
 ```bash
+module sub_module1(input a , input b , output y);
+ assign y = a & b;
+endmodule
 
+
+module sub_module2(input a , input b , output y);
+ assign y = a^b;
+endmodule
+
+
+module multiple_module_opt(input a , input b , input c , input d , output y);
+wire n1,n2,n3;
+
+sub_module1 U1 (.a(a) , .b(1'b1) , .y(n1));
+sub_module2 U2 (.a(n1), .b(1'b0) , .y(n2));
+sub_module2 U3 (.a(b), .b(d) , .y(n3));
+
+assign y = c | (b & n1); 
+
+
+endmodule
 ```
 
 **Lab 6 - multiple_module_opt.v2**
 
 - RTL file 
 ```bash
+module sub_module(input a , input b , output y);
+ assign y = a & b;
+endmodule
 
+
+
+module multiple_module_opt2(input a , input b , input c , input d , output y);
+wire n1,n2,n3;
+
+sub_module U1 (.a(a) , .b(1'b0) , .y(n1));
+sub_module U2 (.a(b), .b(c) , .y(n2));
+sub_module U3 (.a(n2), .b(d) , .y(n3));
+sub_module U4 (.a(n3), .b(n1) , .y(y));
+
+
+endmodule
 ```
 
 </details>
