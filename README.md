@@ -842,6 +842,8 @@ module opt_check (input a , input b , output y);
 	assign y = a?b:0;
 endmodule
 ```
+- Optimised hardware generated after synthesis on yosys
+
 
 **Lab 2 - opt_check2.v**
 
@@ -851,7 +853,9 @@ module opt_check2 (input a , input b , output y);
 	assign y = a?1:b;
 endmodule
 ```
+- Optimised hardware generated after synthesis on yosys
 
+  
 **Lab 3 - opt_check3.v**
 
 - RTL file 
@@ -860,7 +864,9 @@ module opt_check3 (input a , input b, input c , output y);
 	assign y = a?(c?b:0):0;
 endmodule
 ```
+- Optimised hardware generated after synthesis on yosys
 
+  
 **Lab 4 - opt_check4.v**
 
 - RTL file 
@@ -869,6 +875,9 @@ module opt_check4 (input a , input b , input c , output y);
  assign y = a?(b?(a & c ):c):(!c);
  endmodule
 ```
+- Optimised hardware generated after synthesis on yosys
+
+  
 
 **Lab 5 - multiple_module_opt.v**
 
@@ -896,6 +905,9 @@ assign y = c | (b & n1);
 
 endmodule
 ```
+- Optimised hardware generated after synthesis on yosys
+
+  
 
 **Lab 6 - multiple_module_opt.v2**
 
@@ -918,7 +930,9 @@ sub_module U4 (.a(n3), .b(n1) , .y(y));
 
 endmodule
 ```
+- Optimised hardware generated after synthesis on yosys
 
+  
 </details>
 
 
