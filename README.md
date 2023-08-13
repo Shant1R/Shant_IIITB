@@ -843,7 +843,7 @@ module opt_check (input a , input b , output y);
 endmodule
 ```
 - Optimised hardware generated after synthesis on yosys
-
+![op_cc_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/a5e82f35-01cc-468b-bd40-351a665daefb)
 
 **Lab 2 - opt_check2.v**
 
@@ -854,6 +854,7 @@ module opt_check2 (input a , input b , output y);
 endmodule
 ```
 - Optimised hardware generated after synthesis on yosys
+![op_cc_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/1e5cca73-9352-4920-9ef2-484be87ddf9e)
 
   
 **Lab 3 - opt_check3.v**
@@ -865,6 +866,7 @@ module opt_check3 (input a , input b, input c , output y);
 endmodule
 ```
 - Optimised hardware generated after synthesis on yosys
+![op_cc_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/3711aae4-aab1-4ea8-bf34-04a746b20ac9)
 
   
 **Lab 4 - opt_check4.v**
@@ -876,6 +878,7 @@ module opt_check4 (input a , input b , input c , output y);
  endmodule
 ```
 - Optimised hardware generated after synthesis on yosys
+![op_cc_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/7897969a-87c5-4891-b486-570e25f47e90)
 
   
 
@@ -906,6 +909,7 @@ assign y = c | (b & n1);
 endmodule
 ```
 - Optimised hardware generated after synthesis on yosys
+![op_cc_5](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ddf3154d-2677-4324-a973-04e0a36712a2)
 
   
 
@@ -931,6 +935,7 @@ sub_module U4 (.a(n3), .b(n1) , .y(y));
 endmodule
 ```
 - Optimised hardware generated after synthesis on yosys
+![op_cc_6](https://github.com/Shant1R/Shant_IIITB/assets/59409568/1d8f999f-09be-4c04-a452-8b1e8ab23e85)
 
   
 </details>
