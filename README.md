@@ -825,6 +825,20 @@ Under this the flop can be optimised in case the output of the flop is constant,
 <details>
 
 <summary><strong>Combinational logic Optimizations</strong></summary>
+
+Under this section, we go through 6 lab experiments and synthesis them using yosys. The code used to optimise the design is given below. It is executed before mapping the design to the lib file. 
+
+**Lab 1 - opt_check.v**
+
+**Lab 2 - opt_check2.v**
+
+**Lab 3 - opt_check3.v**
+
+**Lab 4 - opt_check4.v**
+
+**Lab 5 - multiple_module_opt.v**
+
+**Lab 6 - multiple_module_opt.v2**
   
 </details>
 
