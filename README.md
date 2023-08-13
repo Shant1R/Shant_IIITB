@@ -703,17 +703,41 @@ endmodule
 - Now we synthesis the design using yosys.
 
 ![dff_syn_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6e929a9e-8a5b-4e7f-993c-39882bc6b734)
-
-
-
-  
-
-
-
-
   
 </details>
 
+
+<details>
+
+<summary><strong>Interesting Optimisations</strong></summary>
+
+Under this section we look into two interesting cases and how they are executed and designed.
+
+First we look into mul2.v
+
+- Code for mul2.v
+
+```bash
+module mul2 (input [2:0] a, output [3:0] y);
+	assign y = a * 2;
+endmodule
+```
+
+- The block diagram and the truth table for the executed logic is shown under.
+   
+![sp_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/774a0cd2-2144-4bce-bab3-b498db7ef417)
+
+- From these, we are able to infer that the logic requires the input to be multiplied with 2, and upon checking the output it is the input with 1'b0 padding.
+- Thus the design for the logic needs no hardware to be mapped.
+- We will confirm this using yosys.
+
+![sp_2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ee8c1ac5-23e4-4339-a6d5-9affa8741ffa)
+
+- From the yosys synthesis, we observe the number of cells in design is 0 and there is no hardware to be mapped. These have been highlighted in the picture above.
+- The schematic attained shows a similar result.
+- This was done in case of multiplication with 2. For multiplication with 4, we give 2'b00 padding and for 8, we give 3'b000 padding. This goes on.
+ 
+</details>
 
 ## DAY 3 - Combinational and Sequential Optimization
 
