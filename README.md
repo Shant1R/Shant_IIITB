@@ -1133,13 +1133,15 @@ end
 
 endmodule
 ```
+- Synthesis using yosys
+
 ![sp_opt1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/031afa01-1030-42d7-8f83-097505eb9cf0)
 
 - In the image, it is observed that is integrated only one dff for optimised hardware design.
 
 **Case 2**
 
-- RTL code
+- RTL code for the changed file.
 
 ```bash
 module counter_opt (input clk , input reset , output q);
@@ -1156,6 +1158,13 @@ end
 
 endmodule
 ```
+- Synthesis using yosys
+
+![sp_opt2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/1c332dd0-3c46-4868-8a89-778f559a3631)
+![sp_opt](https://github.com/Shant1R/Shant_IIITB/assets/59409568/4c97002c-e620-492b-88ec-b2323052d963)
+
+- In the yosys generation, we see the design has encorporated 3 dff for the 3 bit counter.
+- It is evident that the yosys synthesizer optimizes for the unsed bits in the output.
 
   
 </details>
