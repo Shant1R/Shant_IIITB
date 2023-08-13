@@ -736,6 +736,31 @@ endmodule
 - From the yosys synthesis, we observe the number of cells in design is 0 and there is no hardware to be mapped. These have been highlighted in the picture above.
 - The schematic attained shows a similar result.
 - This was done in case of multiplication with 2. For multiplication with 4, we give 2'b00 padding and for 8, we give 3'b000 padding. This goes on.
+
+Now, we look into another special case. 
+- Condider a 3bit number a[2:0], and the logic to be implemented is that the output y[5:0] is equal to 9 times of a[2:0].
+- Code for execution
+
+```bash
+module mult8 (input [2:0] a , output [5:0] y);
+	assign y = a * 9;
+endmodule
+```
+
+- Logic explaination
+
+![sp_3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/44bbe634-8835-4d0e-b783-6edd05ce9717)
+
+- Multiplcation with 9 can be seen as multiplication with 8 and plus 1.
+- We know multiplication with 8 is equal to 3'b000 padding, and adding the same 3 bit number to the padded number comes of as concatanation of {a,a}.
+- Thus there are no standard cell required for the design. We verify this using yosys.
+
+![sp_4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/7da4d7a5-2ea6-4b55-a5d3-95103956e2dd)
+
+- We see that there are no standard cells required.
+- We see the concatanation operation done in the netlist. 
+
+
  
 </details>
 
