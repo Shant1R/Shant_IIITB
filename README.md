@@ -1244,6 +1244,11 @@ endmodule
 The difference between blocking and non-blocking type of assignment comes under the always block
 - Blocking assignment(=) -> Can be understood as serial execution, ie statements are executed one by one
 - Non-blocking assignment(<=) -> Can be understood as parallel execution, ie the RHS operation of the assignments are performed first, then the value is assigned to LHS simultaneously.
+- Now, we take example of a 2 bit shift registor. 
+
+![bnb_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/48aaad73-3e39-4dd5-a6c9-4920e7be1a7b)
+
+
 
 
 </details> 
