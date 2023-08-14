@@ -1198,6 +1198,48 @@ We know we perform GLS to check for the logic validation after synthesis. Thus t
 - Blocking vs Non-blocking statements
 - Non standard verilog coding practices
 
+*Missing Sensitivity List*
+
+To understand this we take examples for a mux with different sensitivity. 
+- Code 1`
+
+```bash
+module mux1 (input sel , i0, i1 ,
+output reg y);
+
+always@(sel)
+begin
+if(sel)
+	y=i1;
+else
+	y=i0;
+end
+
+endmodule
+```
+- Code 2
+
+```bash
+module mux (input sel , i0, i1 ,
+output reg y);
+
+always@(*) 
+begin
+if(sel)
+	y=i1;
+else
+	y=i0;
+end
+
+endmodule
+```
+
+- Mux 1 is sensitive to changes is changes in latches, ie the output y will change only at the changes of sel. Thus the changes of inputs i1 and i0 are not displayed in the output.
+- Mux 2 is sensitive to all three, so when high sel, output covers all changes in i1, and for low sel, all changes in i0 are covered.
+- Now, the simulation and synthesis of mux 2 wont have any mismatch.
+- But mux1 will have mismatch,as simulators work on sensitivity list and the simulation will behave as a *double edge triggered latch*, while the synthesizer converts the logic into netlist and doesn't look into sensitivity list, thus synthesis will behave as a *2 input MUX*.  
+
+
 </details> 
 
 
