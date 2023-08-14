@@ -1237,7 +1237,13 @@ endmodule
 - Mux 1 is sensitive to changes is changes in latches, ie the output y will change only at the changes of sel. Thus the changes of inputs i1 and i0 are not displayed in the output.
 - Mux 2 is sensitive to all three, so when high sel, output covers all changes in i1, and for low sel, all changes in i0 are covered.
 - Now, the simulation and synthesis of mux 2 wont have any mismatch.
-- But mux1 will have mismatch,as simulators work on sensitivity list and the simulation will behave as a *double edge triggered latch*, while the synthesizer converts the logic into netlist and doesn't look into sensitivity list, thus synthesis will behave as a *2 input MUX*.  
+- But mux1 will have mismatch,as simulators work on sensitivity list and the simulation will behave as a *double edge triggered latch*, while the synthesizer converts the logic into netlist and doesn't look into sensitivity list, thus synthesis will behave as a *2 input MUX*.
+
+*Blocking vs Non-blocking Statement*
+
+The difference between blocking and non-blocking type of assignment comes under the always block
+- Blocking assignment(=) -> Can be understood as serial execution, ie statements are executed one by one
+- Non-blocking assignment(<=) -> Can be understood as parallel execution, ie the RHS operation of the assignments are performed first, then the value is assigned to LHS simultaneously.
 
 
 </details> 
