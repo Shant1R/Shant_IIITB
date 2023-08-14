@@ -1370,7 +1370,7 @@ endmodule
 
 ![cav2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/603d1964-f978-4dc9-a75d-b5ee5bc66f72)
 
-- Running GLS on the netlist file.
+- Running GLS on the netlist file using iverilog and gtkwave.
 
 ![cav3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/21a0d969-9d66-4298-846e-d2057bfd8ce9)
 
