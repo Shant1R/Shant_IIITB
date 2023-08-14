@@ -1281,6 +1281,31 @@ end
 <details>
 
 <summary><strong>Lab on GLS Synthesis-Simulation Mismatch</strong></summary>
+We take two examples of mux to have a better understanding of the importance. Here, we focus on mismatch between simulation and synthesis. 
+
+We first take the case of a good mux using ternary operator.
+
+- RTL code -> ternary_operator_mux.v
+
+```bash
+module ternary_operator_mux (input i0 , input i1 , input sel , output y);
+	assign y = sel?i1:i0;
+endmodule
+```
+
+- Simulating using iverilog and gtkwave
+
+![gls1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ea079af7-b4c3-4ccf-b87c-3fdf0bfcddc9)
+
+- Now we synthesize it using yosys
+
+![gls2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d31164bc-88d1-4138-9a8d-7a52ee24ec5f)
+
+- Running GLS using the netlist file generated using yosys
+
+![gls3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/9baf0702-1bfd-42ac-82cb-a08ca356a02f)
+
+- It is clear that both the simulation waves are same. 
  
 </details>
 
