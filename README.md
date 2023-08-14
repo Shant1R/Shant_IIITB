@@ -1175,7 +1175,74 @@ endmodule
 
 ## DAY 4 - GLS, Blocking vs Non-blocking and Synthesys-Simulation Mismatch
 
+<details>
+
+<summary><strong>GLS, Synthesis-Simulation Mismatch and Blocking/Non-blocking Statements</strong></summary>
+
+</details> 
+
+
+<details>
+
+<summary><strong>Lab on GLS Synthesis-Simulation Mismatch</strong></summary>
+ 
+</details>
+
+
+<details>
+
+<summary><strong>Lab on Synthesis-Simulation Mismatch and Blocking statements</strong></summary>
+ 
+</details>
+
+
 ## DAY 5 - If, case, for loop and for generate
+
+
+<details>
+
+<summary><strong>If Case Constructs</strong></summary>
+ 
+</details>
+
+
+<details>
+
+<summary><strong>Hands on "Incomplete if case"</strong></summary>
+ 
+</details>
+
+
+<details>
+
+<summary><strong>Hands on "overlapping case"</strong></summary>
+ 
+</details>
+
+
+<details>
+
+<summary><strong>For loop and For generate</strong></summary>
+ 
+</details>
+
+
+
+<details>
+
+<summary><strong>Hands on "for loop" & "for generate"</strong></summary>
+ 
+</details>
+
+
+
+<details>
+
+<summary><strong>If Case Constructs</strong></summary>
+ 
+</details>
+
+
 
 
 
