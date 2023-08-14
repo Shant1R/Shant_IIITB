@@ -1345,6 +1345,39 @@ endmodule
 <details>
 
 <summary><strong>Lab on Synthesis-Simulation Mismatch and Blocking statements</strong></summary>
+
+Under this section, we will look into the mismatch between simulation and synthesis caused due to the blocking statements
+
+- RTL code for blocking_caveat.v
+
+```bash
+module blocking_caveat (input a , input b , input  c, output reg d); 
+reg x;
+always @ (*)
+begin
+	d = x & c;
+	x = a | b;
+end
+endmodule
+```
+
+- Running the simulation using iverilog and gtkwave
+
+  ![cav1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/00dbba46-94a0-4cb5-9492-ce60a415677b)
+
+- we attain a waveform, which does not matches with the expected output waveform for *d=((a|b).c)*. Thus the simulation logic is failing.
+- Now we carry on to synthesize the design using yosys.
+- We generate a netlist file.
+
+![cav2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/603d1964-f978-4dc9-a75d-b5ee5bc66f72)
+
+- Running GLS on the netlist file.
+
+![cav3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/21a0d969-9d66-4298-846e-d2057bfd8ce9)
+
+- It is seen that the waveform matches with the expected output for *d=((a|b).c)*.
+- There is clear mismatch between the simulation and synthesis in this case. This happended coz we used blocking statements, and while simulation, the design makes a flop, which wasn't the intention of the original design.
+  
  
 </details>
 
