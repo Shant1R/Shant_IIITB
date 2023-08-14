@@ -1179,6 +1179,14 @@ endmodule
 
 <summary><strong>GLS, Synthesis-Simulation Mismatch and Blocking/Non-blocking Statements</strong></summary>
 
+**GLS -- Gate Level Simualation**
+
+We have run the simulation using iverilog before, where we feed in the RTL file and the testbench. GLS is when we simulate the netlist file in place of RTL file.
+- RTL file and Netlist file are logically the same, hence netlist fits in testbench perfectly.
+- RTL file and netlist file has the same inputs and outputs.
+- GLS simuation is performed to verilfy the logic after synthesis.
+- GLS simulation also accounts for the timing specifications of the design. For this GLS has to be run with delay annotation.
+
 </details> 
 
 
