@@ -1186,10 +1186,17 @@ We have run the simulation using iverilog before, where we feed in the RTL file 
 - RTL file and netlist file has the same inputs and outputs.
 - GLS simuation is performed to verilfy the logic after synthesis.
 - GLS simulation also accounts for the timing specifications of the design. For this GLS has to be run with delay annotation.
-- GLS flow using iverilog.
+
+GLS flow using iverilog.
 
 ![gls_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/43ace40b-f4ce-4788-9903-b8971a5b9d92)
 
+We know we perform GLS to check for the logic validation after synthesis. Thus there might be some mistmatch that happens during the synthesis.
+
+**Why does Synthesis and Simulation mismatch happen?**
+- Missing sensitivity list
+- Blocking vs Non-blocking statements
+- Non standard verilog coding practices
 
 </details> 
 
