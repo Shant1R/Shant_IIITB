@@ -1387,6 +1387,32 @@ endmodule
 <details>
 
 <summary><strong>If Case Constructs</strong></summary>
+
+Under this section, we will look into if and case statements for verilog coding. 
+
+*If-else condotions* are known as priority logic statments.
+
+- General syntax for if-else condtions
+```bash
+if(Condition 1)
+	<Statement 1>
+else if(Condition 2)
+	<Statement 2>
+else if(Condition 3)
+	<Statement 3>
+else
+	<Statement 4>
+end
+```
+- It can be inferred that, when the condition 1 is valid, statement 1 is of the highest priority, and the rest of the condtions aren't checked for.
+- Similarly, we check for which condtion falls true. In case none do, the else block statements takes highest priority.
+- The if-else statements can be designed using muxs as shown-->
+
+
+**Cautions while using if-else**
+- In case we miss the else block, it can cause an inferred latch.
+- It is a latch that wasn't intended in the design.
+
  
 </details>
 
