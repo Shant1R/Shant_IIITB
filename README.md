@@ -1236,12 +1236,6 @@ endmodule
 
 
 
-<details>
-
-<summary><strong>If Case Constructs</strong></summary>
- 
-</details>
-
 
 
 
