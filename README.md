@@ -1249,6 +1249,29 @@ The difference between blocking and non-blocking type of assignment comes under 
 ![bnb_1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/48aaad73-3e39-4dd5-a6c9-4920e7be1a7b)
 
 
+Now taking a case of combinational cicuit into consideration.
+
+- Code A 
+```bash
+always @(*)
+begin
+  y  =  q0 & c;
+  q0 =  a  | b;
+end
+
+```
+- Code B
+```bash
+always @(*)
+begin
+  q0 =  a  | b;
+  y  =  q0 & c;
+end
+```
+
+- Upon simulation, both the code A and B gives the same output.
+- Upon synthesis, the design varies as code A, uses the old value of q0, thus incorporates a flop, whereas design B uses the new value, thus no flop required.
+- This mismatch was generated due to swaping the statement positions.
 
 
 </details> 
