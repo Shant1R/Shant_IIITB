@@ -830,6 +830,8 @@ Under this section, we go through 6 lab experiments and synthesis them using yos
 opt_clean -purge
 ```
 
+*opt_clean* remove unused cells and wires. The *-purge* switch removes internal nets if they have a public name. This command identifies wires and cells that are unused and removes them. This command can be used to clean up after the commands that do the actual work.
+
 In case of multiple models, it is important to flatten the design then followup with optimization.
 
 
