@@ -1305,7 +1305,39 @@ endmodule
 
 ![gls3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/9baf0702-1bfd-42ac-82cb-a08ca356a02f)
 
-- It is clear that both the simulation waves are same. 
+- It is clear that both the simulation waves are same.
+
+Now we take the example of the bad mux, we discussed before -> one that acts as a double triggered latch during simulation.
+
+- RTL code -> bad_mux.v
+```bash
+
+module bad_mux (input i0 , input i1 , input sel , output reg y);
+always @ (sel)
+begin
+	if(sel)
+		y <= i1;
+	else 
+		y <= i0;
+end
+endmodule
+
+```
+
+- Simulating using iverilog and GTKwave
+
+![gls4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/c912f00c-8cae-4680-88ed-2a1175e40fed)
+
+- Synthesizing the design using yosys.
+
+![gls5](https://github.com/Shant1R/Shant_IIITB/assets/59409568/97465d38-ccf1-4182-9c5d-1ce6ffb1cef4)
+
+- Running GLS using the generated netlist file on iverilog and gtkwave.
+
+![gls6](https://github.com/Shant1R/Shant_IIITB/assets/59409568/1823fca8-48ce-4cc8-91bb-e9bdd128f1b4)
+
+- Under this, we see a clear mismatch between the simulation and synthesis designs. The RTL file and netlist files aren't the same logic implemention. This happened due to the sensitivity listing under the RTL file.
+
  
 </details>
 
