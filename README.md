@@ -1446,6 +1446,34 @@ end
 
 ![case1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/df44cbf2-60cf-4b2e-83b4-e9a8d75f8544)
 
+- Another point to take note of --> avoid partial assignments, else this might cause inferred latch formations.
+- Example to show the condtion of partial assignments.
+
+```bash
+reg [1:0] sel;
+always @(*)
+ begin
+   case(sel)
+     2'b00: begin
+             x=a;
+             y=b;
+            end
+     2'b01: begin
+             x=c;
+            end 
+     default: begin
+               x=d;
+               y=b;
+             end
+   endcase
+  end
+```
+- The hardware design for the given RTL file.
+
+ ![case2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d9e110da-5117-43f1-9451-c8eaf04583fb)
+
+- To avoid this it is important we assign all the variables in all the given cases and default case.
+
  
 </details>
 
