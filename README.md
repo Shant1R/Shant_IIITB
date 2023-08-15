@@ -1390,7 +1390,7 @@ endmodule
 
 Under this section, we will look into if and case statements for verilog coding. These statements are always given under an **always** block.
 
-*If-else condotions* are known as priority logic statments.
+***If-else condotions*** are known as priority logic statments.
 
 - General syntax for if-else condtions
 ```bash
@@ -1419,6 +1419,8 @@ end
 - **Note** --> We can use this as a design advantage in cartain cases, such as a **counter** design, where we have an inferred latch to store the previous counts.
 
 ![if3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6ad9ca43-67eb-4b3d-b43b-327d5b0aabaf)
+
+***Case Statement***
 
  
 </details>
