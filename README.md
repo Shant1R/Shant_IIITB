@@ -1485,8 +1485,55 @@ always @(*)
 Now we look into how an incomplete if-else statement cause the hardware design to stray from the intended logic under LAB 1 and LAB 2.
 
 **LAB 1**
+- RTL code for incomp_if.v
+```bash
+module incomp_if (input i0 , input i1 , input i2 , output reg y);
+always @ (*)
+begin
+	if(i0)
+		y <= i1;
+end
+endmodule
+```
+- RTL Simulation using iverilog and gtkwave.
+
+![incomp-if1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ce6e93bf-754b-4b38-8087-7c71f4770c90)
+
+- Synthesis using yosys
+
+![incomp-if](https://github.com/Shant1R/Shant_IIITB/assets/59409568/4efd3236-84d8-4582-9d02-c72ab6046b5f)
+
+- It is seen that there has been an inferred latch formation due to incomplete if-else condtional statements.
 
 **LAB 2**
+
+
+- RTL code for incomp_if2.v
+```bash
+
+module incomp_if2 (input i0 , input i1 , input i2 , input i3, output reg y);
+always @ (*)
+begin
+	if(i0)
+		y <= i1;
+	else if (i2)
+		y <= i3;
+
+end
+endmodule
+```
+- RTL Simulation using iverilog and gtkwave.
+
+![incomp_if3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/5e3c6abe-6b52-4f5b-9b66-ca59548b77f1)
+
+- Synthesis using yosys
+
+![incomp_if4](https://github.com/Shant1R/Shant_IIITB/assets/59409568/3f86455b-c55b-4554-8ea9-ca7882cfff21)
+
+- It is seen that there has been an inferred latch formation due to incomplete if-else condtional statements.
+
+
+
  
 </details>
 
