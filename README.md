@@ -1472,7 +1472,7 @@ always @(*)
 
  ![case2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d9e110da-5117-43f1-9451-c8eaf04583fb)
 
-- To avoid this it is important we assign all the variables in all the given cases and default case.
+- To avoid this it is important we assign all the variables in all the given cases and default case and also avoid overlapping cases.
 
  
 </details>
@@ -1481,6 +1481,12 @@ always @(*)
 <details>
 
 <summary><strong>Hands on "Incomplete if case"</strong></summary>
+
+Now we look into how an incomplete if-else statement cause the hardware design to stray from the intended logic under LAB 1 and then we subsequently see how to rectify such issues under LAB 2.
+
+**LAB 1**
+
+**LAB 2**
  
 </details>
 
