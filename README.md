@@ -1686,12 +1686,40 @@ In this section, we look into programming concept of looping in verilog. There a
 - It is always written under *always* block.
 - This is used to replicate and processing expressions under logic. 
 - This is not used to replicate and instantiate hardwares functions.
+- Example with syntax for looping
+
+```bash
+input reg [31:0] inp;
+integer i;
+always @(*)
+begin
+  for (i=0;i<32;i=i+1)
+  begin
+    if(i == sel)
+      y = inp[i];
+  end
+end 
+```
+
+- Under this example we take a 32 bit input, and we loop in and take the output for y bit wise using for loop. 
 
   
 **Generate for loop**
 - This statement is always written outside the *always* block.
 - This is used to replicate and instantiate hardware, as example in case one needs 100 and gates under some implementation.
-  
+- Example with syntax for *generate for* loop.
+
+```bash
+genvar i;
+generate
+  for(i=0;i<3;i=i+1)
+    begin
+      and u1 (.a(a[i]) , .b(b[i]) , .y(y[i]));
+    end
+endgenerate
+```
+
+- In this example, we instantiate *and* gate u1 3 times using generate for loop.
 
  
 </details>
