@@ -1676,12 +1676,18 @@ endmodule￼
 <details>
 
 <summary><strong>For loop and For generate</strong></summary>
+
+In this section, we look into programming concept of looping in verilog. There are two methods of looping in verilog-->
+
+- for loop
+- generate followed by for loop
+
  
 </details>
 
 
 
-<details>
+<details> 
 
 <summary><strong>Hands on "for loop" & "for generate"</strong></summary>
  
