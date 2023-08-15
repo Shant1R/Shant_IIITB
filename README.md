@@ -1542,7 +1542,7 @@ endmodule
 
 In ths section, we look into various situations with case statement under simulation and synthesis.
 
-**Lab 1**
+**Lab 1 --> without default**
 
 Under this, we look into the formation of inffered latch due to omission of default case.
 
@@ -1569,7 +1569,7 @@ endmodule
 
 - It is seen, due to the omission of the default case, we have an inferred latch in the hardware design.
 
-**Lab 2**
+**Lab 2 --> with default**
 
 Under this, we will look into how the default case removes the formation of a latch in the design.
 
