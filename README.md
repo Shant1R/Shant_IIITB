@@ -1388,7 +1388,7 @@ endmodule
 
 <summary><strong>If Case Constructs</strong></summary>
 
-Under this section, we will look into if and case statements for verilog coding. These statements are always given under an **always** block.
+Under this section, we will look into if and case statements for verilog coding. These statements are always given under an **always** block. Thus the output is always a reg type. 
 
 ***If-else condotions*** are known as priority logic statments.
 
@@ -1422,6 +1422,22 @@ end
 
 ***Case Statement***
 
+- RTL syntax
+```bash
+ always @(*)
+ begin
+   case(sel)
+     2'b00: begin
+	    ------
+	    ------
+	    end
+     2'b01: begin
+            ------
+     	    ------	
+	    end
+   endcase
+ end
+```
  
 </details>
 
