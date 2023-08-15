@@ -1850,7 +1850,14 @@ endmodule
 
 
 
+## Acknowledgement
 
+- Kunal Ghosh, VSD Corp. Pvt. Ltd.
+- SkyWater foundry
+- ChatGTP
+- Alwin Saiju, Colleague, IIITB.
+- Emil Lal, Colleague, IIITB.
+- Mariam Rakka.
 
 
 
