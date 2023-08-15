@@ -1634,9 +1634,42 @@ endmodule
 
 - It is noticed that we have a latch in the design of the hardware even when we didn't had one in RTL file. This is due to the partial case assignment.
 
-**Lab 4**
+**Lab 4 - The bad Case**
 
- 
+Under this, we look into the case of a bad case, which has simulation synthesis mismatch due to the improper assignment for case 1'b1?. This leads to formation of inferred latches.
+
+- RTL file for bad_case.v
+
+```bash
+module bad_case (input i0 , input i1, input i2, input i3 , input [1:0] sel, output reg y);
+always @(*)
+begin
+	case(sel)
+		2'b00: y = i0;
+		2'b01: y = i1;
+		2'b10: y = i2;
+		2'b1?: y = i3;
+		//2'b11: y = i3;
+	endcase
+end
+
+endmodule￼
+```
+
+- Running simulation using iverilog and GTKwave.
+
+![Screenshot from 2023-08-15 22-46-42](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d5ded630-8581-43d3-a50e-d9af3b9ce07e)
+
+- Running synthesis using yosys.
+
+![Screenshot from 2023-08-15 22-49-30](https://github.com/Shant1R/Shant_IIITB/assets/59409568/c1b558b9-c94c-451c-97a9-4d915e2916d9)
+
+- Running GLS using iverilog and GTKwave from the netlist attained under synthesis.
+
+![Screenshot from 2023-08-15 22-52-53](https://github.com/Shant1R/Shant_IIITB/assets/59409568/44977eec-2281-4508-8b8d-bb10243dc47e)
+
+- We can see the mismatching under GLS and RTL simulation. This is due to improper assignment and formation of latches which weren't a part of the intended logic design. 
+
 </details>
 
 
