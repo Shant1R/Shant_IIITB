@@ -1422,6 +1422,7 @@ end
 
 ***Case Statement***
 
+- Case statement looks for equality for the select line variable.
 - RTL syntax
 ```bash
  always @(*)
@@ -1439,6 +1440,12 @@ end
    endcase
  end
 ```
+- In the syntax above we have taken a 2 bit select variable, thus there are 4 cases to be determined.
+- In case we dont address all four cases, the remaining two cases will form a latch with the previous output.
+- In order to avoid these inferred lateches, it is practiced to always have a default block.
+
+![case1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/df44cbf2-60cf-4b2e-83b4-e9a8d75f8544)
+
  
 </details>
 
