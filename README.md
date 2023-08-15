@@ -1721,7 +1721,6 @@ endgenerate
 
 - In this example, we instantiate *and* gate u1 3 times using generate for loop.
 
- 
 </details>
 
 
@@ -1729,7 +1728,82 @@ endgenerate
 <details> 
 
 <summary><strong>Hands on "for loop" & "for generate"</strong></summary>
- 
+
+Under this section, we go through some implementations, simulation and synthesis for a better understanding.
+
+**Lab 1 - MUX**
+
+- Under this, we implement a mux using for loop.
+- Advantage of this method over if-case method is that we don't have to write multiple lines.
+- For a 64 input mux, using if-case we need over 64 lines of code, whereas the same can be done under 5-6 lines using for loop.
+- Example --> RTL code for mux_generate.v
+
+```bash
+module mux_generate (input i0 , input i1, input i2 , input i3 , input [1:0] sel  , output reg y);
+wire [3:0] i_int;
+assign i_int = {i3,i2,i1,i0};
+integer k;
+always @ (*)
+begin
+for(k = 0; k < 4; k=k+1) begin
+	if(k == sel)
+		y = i_int[k];
+end
+end
+endmodule
+```
+
+- Running RTL simulaltion using iverilog and gtkwave.
+
+![Screenshot from 2023-08-15 23-54-32](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d891ffd5-11b7-4ee3-b268-7bb296555ed2)
+
+- Running synthesis using yosys.
+
+![Screenshot from 2023-08-15 23-55-49](https://github.com/Shant1R/Shant_IIITB/assets/59409568/c5635a9c-0ca1-410e-b4dd-6a86d568356e)
+
+- Running GLS using iverilog and gtkwave and the netlist attained in syhthesis. 
+
+![Screenshot from 2023-08-15 23-57-00](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d3f4401f-874c-478c-866b-2485f24c2197)
+
+- It is observed that both the RTL simulation and GLS have same output waveform. Thus we have the correct design.
+
+
+**Lab 2 - DEMUX**
+- Under this, we follow up with the implementation of demux
+- RTL code for demux_generate.v
+
+```bash
+module demux_generate (output o0 , output o1, output o2 , output o3, output o4, output o5, output o6 , output o7 , input [2:0] sel  , input i);
+reg [7:0]y_int;
+assign {o7,o6,o5,o4,o3,o2,o1,o0} = y_int;
+integer k;
+always @ (*)
+begin
+y_int = 8'b0;
+for(k = 0; k < 8; k++) begin
+	if(k == sel)
+		y_int[k] = i;
+end
+end
+endmodule
+
+
+```
+
+- Running RTL simulation using iverilog and GTKwave.
+
+  ![Screenshot from 2023-08-16 00-07-16](https://github.com/Shant1R/Shant_IIITB/assets/59409568/3fa23e02-cf39-48af-8e55-c804dcbf0a6f)
+
+- Running synthesis using yosys.
+
+![Screenshot from 2023-08-16 00-08-20](https://github.com/Shant1R/Shant_IIITB/assets/59409568/a5732413-bd44-4c6d-8e17-a191b5b228da)
+
+- Running GLS using iverilog and GTKwave with the netlist file generated during synthesis.
+
+![Screenshot from 2023-08-16 00-08-52](https://github.com/Shant1R/Shant_IIITB/assets/59409568/206d4a14-feb8-4eb3-bf93-f11102f5b3da)
+
+- We see that both the waveforms for GLS and RTL simulation are the same. Thus we have the correct logic implementataion for demux. 
+
 </details>
 
 
