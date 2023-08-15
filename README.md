@@ -1542,7 +1542,7 @@ endmodule
 
 In ths section, we look into various situations with case statement under simulation and synthesis.
 
-**Lab 1 --> without default**
+**Lab 1 --> without *default***
 
 Under this, we look into the formation of inffered latch due to omission of default case.
 
@@ -1569,7 +1569,7 @@ endmodule
 
 - It is seen, due to the omission of the default case, we have an inferred latch in the hardware design.
 
-**Lab 2 --> with default**
+**Lab 2 --> with *default***
 
 Under this, we will look into how the default case removes the formation of a latch in the design.
 
@@ -1599,7 +1599,40 @@ endmodule
 
 - Under this case, we see no inferred latch formations. 
 
-**Lab 3**
+**Lab 3 --> *Partial case assignment***
+
+Under this, we look into how partial case assignments cause the formation of inferred latch.
+
+- RTL file for *partial_case_assign.v*
+
+```bash
+module partial_case_assign (input i0 , input i1 , input i2 , input [1:0] sel, output reg y , output reg x);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : begin
+			y = i0;
+			x = i2;
+			end
+		2'b01 : y = i1;
+		default : begin
+		           x = i1;
+			   y = i2;
+			  end
+	endcase
+end
+endmodule
+```
+
+- Running simulation using iverilog and gtkwave.
+
+![Screenshot from 2023-08-15 14-50-26](https://github.com/Shant1R/Shant_IIITB/assets/59409568/71f3a128-80a0-42b1-b21e-06aaa851ad56)
+
+- Running synthesis using yosys.
+
+![Flowchart - Frame 32](https://github.com/Shant1R/Shant_IIITB/assets/59409568/fb8fa107-f9a0-46b5-8af6-cfc3083d726d)
+
+- It is noticed that we have a latch in the design of the hardware even when we didn't had one in RTL file. This is due to the partial case assignment.
 
 **Lab 4**
 
