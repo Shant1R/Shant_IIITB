@@ -1482,7 +1482,7 @@ always @(*)
 
 <summary><strong>Hands on "Incomplete if case"</strong></summary>
 
-Now we look into how an incomplete if-else statement cause the hardware design to stray from the intended logic under LAB 1 and then we subsequently see how to rectify such issues under LAB 2.
+Now we look into how an incomplete if-else statement cause the hardware design to stray from the intended logic under LAB 1 and LAB 2.
 
 **LAB 1**
 
