@@ -1416,7 +1416,7 @@ end
 
 ![if2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/3b103d4f-d2c5-48cb-b701-0ed93d7cbec3)
 
-- We can use this as a design advantage in cartain cases, such as a counter design, where we have an inferred latch to store the previous counts.
+- **Note** --> We can use this as a design advantage in cartain cases, such as a **counter** design, where we have an inferred latch to store the previous counts.
 
 ![if3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6ad9ca43-67eb-4b3d-b43b-327d5b0aabaf)
 
