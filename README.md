@@ -1804,7 +1804,49 @@ endmodule
 
 - We see that both the waveforms for GLS and RTL simulation are the same. Thus we have the correct logic implementataion for demux. 
 
+**Lab 3 - Ripple Carry Adder**
+
+- Under this, we look into implementation of an 8 bit ripple carry adder.
+- In this we need 8 single bit adders, that is instantiate single bit full adder 8 times. We implement *generate for* for making this into a simple and shorter code.
+
+- RTL file for rca.v
+```bash
+module rca (input [7:0] num1 , input [7:0] num2 , output [8:0] sum);
+wire [7:0] int_sum;
+wire [7:0]int_co;
+
+genvar i;
+generate
+	for (i = 1 ; i < 8; i=i+1) begin
+		fa u_fa_1 (.a(num1[i]),.b(num2[i]),.c(int_co[i-1]),.co(int_co[i]),.sum(int_sum[i]));
+	end
+
+endgenerate
+fa u_fa_0 (.a(num1[0]),.b(num2[0]),.c(1'b0),.co(int_co[0]),.sum(int_sum[0]));
+
+
+assign sum[7:0] = int_sum;
+assign sum[8] = int_co[7];
+endmodule
+
+```  
+
+- Running RTL simulation using iverilog and gtkwave.
+
+![Screenshot from 2023-08-16 00-20-41](https://github.com/Shant1R/Shant_IIITB/assets/59409568/d2a847d3-11b2-43d7-ba48-1483383f3e44)
+
+- Running synthesis using yosys and generating the hardware and writing netlist file.
+
+![Screenshot from 2023-08-16 00-23-54](https://github.com/Shant1R/Shant_IIITB/assets/59409568/258075f0-68ca-4167-b193-c1d4d4cdf570)
+
+- Running GLS using iverilog and gtkwave with the netlist file.
+
+![Screenshot from 2023-08-16 00-24-58](https://github.com/Shant1R/Shant_IIITB/assets/59409568/ad05003b-f6dc-470d-bccf-72427ac15b6f)
+
+- We see the same simulation and GLS waveform, thus the ripple carry adder logic is correct and has been correctly synthesizer. The advantage of using generate for is that we have to instantiate once and the code multiple copies, ie multiple instances as defined.
+
 </details>
+
 
 
 
