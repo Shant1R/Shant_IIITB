@@ -1682,6 +1682,17 @@ In this section, we look into programming concept of looping in verilog. There a
 - for loop
 - generate followed by for loop
 
+**For loop**
+- It is always written under *always* block.
+- This is used to replicate and processing expressions under logic. 
+- This is not used to replicate and instantiate hardwares functions.
+
+  
+**Generate for loop**
+- This statement is always written outside the *always* block.
+- This is used to replicate and instantiate hardware, as example in case one needs 100 and gates under some implementation.
+  
+
  
 </details>
 
