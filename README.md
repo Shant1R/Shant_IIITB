@@ -1532,15 +1532,77 @@ endmodule
 
 - It is seen that there has been an inferred latch formation due to incomplete if-else condtional statements.
 
-
-
  
 </details>
 
 
 <details>
 
-<summary><strong>Hands on "overlapping case"</strong></summary>
+<summary><strong>Hands on "Case"</strong></summary>
+
+In ths section, we look into various situations with case statement under simulation and synthesis.
+
+**Lab 1**
+
+Under this, we look into the formation of inffered latch due to omission of default case.
+
+- RTL file for *incomp_case.v*
+```bash
+module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : y = i0;
+		2'b01 : y = i1;
+	endcase
+end
+endmodule
+```
+
+- Running RTL simulation using iverilog and GTKwave.
+
+![Screenshot from 2023-08-15 13-56-36](https://github.com/Shant1R/Shant_IIITB/assets/59409568/fac1bcb5-9a60-4c3a-8e10-efd55f987202)
+
+- Now running the synthesis for the RTL file using yosys
+
+![Flowchart - Frame 31](https://github.com/Shant1R/Shant_IIITB/assets/59409568/731a1af7-5380-4a5f-b2a2-99e77aa453f4)
+
+- It is seen, due to the omission of the default case, we have an inferred latch in the hardware design.
+
+**Lab 2**
+
+Under this, we will look into how the default case removes the formation of a latch in the design.
+
+- RTL file for *comp_case.v*
+```bash
+
+
+module comp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+always @ (*)
+begin
+	case(sel)
+		2'b00 : y = i0;
+		2'b01 : y = i1;
+		default : y = i2;
+	endcase
+end
+endmodule
+```
+
+- Running simulaion using iverilog and gtkwave.
+
+![Screenshot from 2023-08-15 14-06-42](https://github.com/Shant1R/Shant_IIITB/assets/59409568/53ec3d94-2408-453e-8f67-bd7b91f53ff5)
+
+- Now running the synthesis using yosys.
+
+![Screenshot from 2023-08-15 14-07-27](https://github.com/Shant1R/Shant_IIITB/assets/59409568/38c1d4b8-c989-452f-add2-849e2e7b238f)
+
+- Under this case, we see no inferred latch formations. 
+
+**Lab 3**
+
+**Lab 4**
+
  
 </details>
 
