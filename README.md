@@ -1388,7 +1388,7 @@ endmodule
 
 <summary><strong>If Case Constructs</strong></summary>
 
-Under this section, we will look into if and case statements for verilog coding. 
+Under this section, we will look into if and case statements for verilog coding. These statements are always given under an **always** block.
 
 *If-else condotions* are known as priority logic statments.
 
@@ -1408,10 +1408,17 @@ end
 - Similarly, we check for which condtion falls true. In case none do, the else block statements takes highest priority.
 - The if-else statements can be designed using muxs as shown-->
 
+![if1](https://github.com/Shant1R/Shant_IIITB/assets/59409568/faa370f8-a116-4237-8ad5-00bc1e5b0f97)
 
 **Cautions while using if-else**
 - In case we miss the else block, it can cause an inferred latch.
 - It is a latch that wasn't intended in the design.
+
+![if2](https://github.com/Shant1R/Shant_IIITB/assets/59409568/3b103d4f-d2c5-48cb-b701-0ed93d7cbec3)
+
+- We can use this as a design advantage in cartain cases, such as a counter design, where we have an inferred latch to store the previous counts.
+
+![if3](https://github.com/Shant1R/Shant_IIITB/assets/59409568/6ad9ca43-67eb-4b3d-b43b-327d5b0aabaf)
 
  
 </details>
